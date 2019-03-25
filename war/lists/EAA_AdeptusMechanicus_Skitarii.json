@@ -6,8 +6,7 @@
 	"sections":[
 
 		{"name":"Explorator Fleet Core Formations", "formations": [
-			{ "id":501, "name":"Secutarii Guard", "pts":200, "units":"7 Secutarii", "upgrades":[64,63,61,69] },
-			{ "id":502, "name":"Vanguard Maniple", "pts":175, "units":"7 Skitarii Vanguard", "upgrades":[64,63,61,69] }
+			{ "id":502, "name":"Vanguard Maniple", "pts":175, "units":"9 Skitarii Vanguard and 1 Tech Priest Dominus", "upgrades":[] }
 		]},
 		{"name":"Explorator Fleet Support Formations", "formations": [
 			{ "id":510, "name":"Ranger Centuria", "pts":0, "upgrades":[65] },
@@ -22,9 +21,9 @@
 			{ "id":519, "name":"Kastelan Maniple", "pts":200, "upgrades":[]}
 		]},
 		{"name":"Explorator Fleet Heavy Support Formations<br/>Maximum 4 Knights for each 3k Points", "formations": [
-			{ "id":521, "name":"0-2 Dominus Knight", "pts":175, "units":" One Dominus Knight ", "upgrades":[] },
-			{ "id":522, "name":"0-2 Questoris Knight", "pts":150, "units":"One Questoris Knight ", "upgrades":[] },
-			{ "id":523, "name":"0-2 Crusader Knight", "pts":150, "units":"One Crusader Knight ", "upgrades":[] }
+			{ "id":521, "name":"0-1 Knight Castellan ", "pts":175, "units":"One Knight Castellan", "upgrades":[] },
+			{ "id":522, "name":"0-1 Knight Valiant ", "pts":150, "units":"One Knight Valiant", "upgrades":[] },
+			{ "id":523, "name":"0-1 Knight Paladins ", "pts":150, "units":"Two Knight Paladins", "upgrades":[] }
 		]},
 
 
@@ -38,29 +37,6 @@
 
 	],
 	"upgrades":[	
-		{"id":13, "name":"Inferno Gun", 		"pts":0},
-		{"id":14, "name":"Vulcan Megabolter",		"pts":0},
-		{"id":15, "name":"Plasma Blastgun",		"pts":0},
-		{"id":16, "name":"Turbo-laser Destructor",	"pts":25},
-		{"id":30, "name":"Apocalypse Missile Launcher",	"pts":25},
-		{"id":25, "name":"Laser Burner",		"pts":0},
-		{"id":26, "name":"Corvus Assault Pod",		"pts":0},
-		{"id":27, "name":"Carapace Landing Pad",	"pts":0},
-		{"id":28, "name":"Plasma Cannon",		"pts":25},
-		{"id":29, "name":"Gatling Blaster",		"pts":25},
-		{"id":31, "name":"Close Combat Weapon",		"pts":25},
-		{"id":32, "name":"Melta Cannon",		"pts":50},
-		{"id":33, "name":"Laser Blaster",		"pts":50},
-		{"id":34, "name":"Volcano Cannon",		"pts":50},
-		{"id":35, "name":"Plasma Destructor",		"pts":75},
-		{"id":36, "name":"Support Missile",		"pts":75},
-		{"id":37, "name":"Quake Cannon",		"pts":75},
-		{"id":38, "name":"Minorus Support Missile", "pts":50},
-		{"id":80, "name":"Single Weapon System Surcharge", 	"pts":25},
-		{"id":82, "name":"Veteran Princeps",		"pts":25},
-		{"id":83, "name":"Carapace Multi-Lasers",	"pts":50},
-		{"id":84, "name":"Sacred Icon",			"pts":50},
-
 		{"id":61, "name":"Tech-Priest Dominus",							"pts":25},
 		{"id":62, "name":"Cybernetica Datasmith",						"pts":50},
 		{"id":63, "name":"Magos",								"pts":25},
@@ -89,16 +65,10 @@
 
 		{"id":56, "name":"Onager Dunecrawler - Icarus Array",					"pts":50},
 		{"id":57, "name":"Onager Dunecrawler - Eradication Beamer",				"pts":50},
-		{"id":58, "name":"Questorius Knight-Styrix",						"pts":0},
-		{"id":59, "name":"Questorius Knight-Magaera",						"pts":0},
-		{"id":60, "name":"Secutarii Peltasts",							"pts":0},
-		{"id":91, "name":"Ordinatus Minorus - Bellacosa Volcano cannon",			"pts":0},
-		{"id":92, "name":"Ordinatus Minorus - Ulator Sonic Destroyer",				"pts":0},
-		{"id":93, "name":"Ordinatus Majoris - Sonic Disruptor",					"pts":0},
-		{"id":94, "name":"Ordinatus Majoris - Nova Cannon",					"pts":0},
-		{"id":95, "name":"Ordinatus Majoris - Hellfire Missiles",				"pts":50},
-		{"id":96, "name":"Questorius 2 Knight-Styrix",						"pts":200},
-		{"id":97, "name":"4x Warglaive Armiger Knights",					"pts":200}
+		{"id":93, "name":"Ordinatus Majoris - Sonic Disruptor",					"pts":400},
+		{"id":94, "name":"Ordinatus Majoris - Nova Cannon",					"pts":400},
+		{"id":95, "name":"Ordinatus Majoris - Hellfire Missiles",				"pts":400},
+
 
 
 	],
