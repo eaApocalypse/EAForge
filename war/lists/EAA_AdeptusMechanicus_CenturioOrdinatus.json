@@ -18,7 +18,7 @@
 		]},
 		{"name":"Centurio Ordinatus", "formations":[
 			{ "id":571, "name":"Ordinati Minoris", "pts":125, "upgrades":[] },
-			{ "id":572, "name":"Ordinati Majoris", "pts":125, "upgrades":[] },
+			{ "id":572, "name":"Ordinati Majoris", "pts":425, "upgrades":[] }
 		]},
 		{"name":"Adeptus Mechanicus Navy ", "formations":[
 			{ "id":551, "name":"Avenger Strike Fighters", "pts":175, "units":"2 Avenger Strike Fighters", "upgrades":[] }
