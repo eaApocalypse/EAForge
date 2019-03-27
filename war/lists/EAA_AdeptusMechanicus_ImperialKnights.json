@@ -5,7 +5,7 @@
 	"by":"EA-Apocalypse",
 	"sections":[
 		{"name":"Core Banner", "formations":[
-			{"id":501, "name":"Knight Banner",	"pts":450, "upgrades":[32,33,34]}
+			{"id":501, "name":"Knight Banner",	"pts":400, "upgrades":[32,33,34]}
 		]},
 		{"name":"Support Banners (Max 2 per Core Household)", "formations":[
 			{"id":510, "name":"Armiger Banner",	"pts":200, "units":"Four Knight-Armigers", "upgrades":[]},
