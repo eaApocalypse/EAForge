@@ -15,8 +15,8 @@
 			{"id":514, "name":"Cerastus Knight-Atrapos",	"pts":75, "upgrades":[10,42]}
 		]},
 		{"name":"Dominus Knights", "formations":[
-			{"id":571, "name":"Knight Castellan",	"pts":200, "units":"Four Knight-Armigers", "upgrades":[]},
-			{"id":572, "name":"One Knight Valiant",	"pts":200, "upgrades":[]}
+			{"id":571, "name":"Knight Castellan",	"pts":200, "units":"One Knight Castellan", "upgrades":[]},
+			{"id":572, "name":"Knight Valiant",	"pts":200, "units":"One Knight Valiant", "upgrades":[]}
 		]},
 	  {"name":"Support Formations (Max 2 per Core Household)", "formations":[
 			{"id":521, "name":"Planetary Defence Company",	"pts":150, "units":"9 PDF Infantry, 1 Commander", "upgrades":[20,21,23,22]},
