@@ -21,7 +21,8 @@
 
 		]},
 		{"name":"TITAN LEGION FORMATIONS", "formations":[
-			{"id":520, "name":"Warhound",		"pts":275, "upgrades":[], "units":"1 Warhound Titan"}
+			{"id":520, "name":"Warhound",		"pts":275, "upgrades":[], "units":"1 Warhound Titan"},
+			{"id":521, "name":"Reaver Titan",		"pts":650, "upgrades":[], "units":"1 Reaver Titan"}
 		]},
 		{"name":"IMPERIAL NAVY SUPPORT", "formations":[
 			{"id":530, "name":"Thunderbolt Fighters", "pts":150, "upgrades":[], "units":"2 Thunderbolt Fighters"},
