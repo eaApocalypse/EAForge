@@ -9,10 +9,10 @@
 		]},
 		{"name":"Support Banners (Max 2 per Core Household)", "formations":[
 			{"id":510, "name":"Armiger Banner",	"pts":200, "units":"Four Knight-Armigers", "upgrades":[]},
-			{"id":511, "name":"Cerastus Knight-Lancer",	"pts":50, "upgrades":[10,18]},
-			{"id":512, "name":"Cerastus Knight-Castigator", 	"pts":75, "upgrades":[10,19]},
+			{"id":511, "name":"Cerastus Knight-Lancer",	"pts":100, "upgrades":[10,18]},
+			{"id":512, "name":"Cerastus Knight-Castigator", 	"pts":100, "upgrades":[10,19]},
 			{"id":513, "name":"Cerastus Knight-Acheron",		"pts":100, "upgrades":[10,41]},
-			{"id":514, "name":"Cerastus Knight-Atrapos",	"pts":75, "upgrades":[10,42]}
+			{"id":514, "name":"Cerastus Knight-Atrapos",	"pts":100, "upgrades":[10,42]}
 		]},
 		{"name":"Dominus Knights", "formations":[
 			{"id":571, "name":"Knight Castellan",	"pts":200, "units":"One Knight Castellan", "upgrades":[]},
