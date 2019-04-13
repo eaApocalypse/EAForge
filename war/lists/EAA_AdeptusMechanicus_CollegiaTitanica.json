@@ -1,117 +1,72 @@
 {
-"id":"Collegia Titanica",
-"version":"0.01",
-"by":"EA Apocalypse",
-"sections":[
-{
-"name":"BATTLE TITAN FORMATIONS",
-"formations":[
-    {"id":500,"name":"Emperor Titan","pts":900, "upgrades":[10,11,52]},
-		{"id":501,"name":"Warlord Titan","pts":750, "upgrades":[10,11,50,51]},
-		{"id":503,"name":"Reaver Titan","pts":600, "upgrades":[10,11,50,51]}
-
-]},
-
-{"name":"SCOUT TITAN FORMATIONS (Max two for each Battle Titan formation)",
-"formations":[
-	    {"id":510,"name":"Warhound","pts":275, "upgrades":[]}
-]},
-
-{"name":"ADEPTUS MECHANICUS ALLIES (Max 40%. Max 1 Lysander Fighter for each Warmonger Titan or Reaver Carapace Landing Pad)",
-"formations":[
-        {"id":530,"name":"Skitarii Maniple","pts":225,"units":"9 Skitarii Vanguard, 1 Tech-Priest Dominus","upgrades":[99]},
-		    {"id":532,"name":"Avenger Squadron","pts":175,"units":"2 Avenger Fighter-Bombers","upgrades":[]},
-		    {"id":534,"name":"Orbital Support","pts":175,"units":"1 Ark Mechanicus Battleship","upgrades":[]}
-]}
-
-],
-"upgrades":[
-      {"id":10,"name":"Legate","pts":50},
-      {"id":11,"name":"Veteran Princeps","pts":25},
-
-	    {"id":20,"name":"Imperator Titan","pts":0},
-	    {"id":21,"name":"Warmonger Titan","pts":0},
-
-	    {"id":30,"name":"Gatling Blaster","pts":25},
-	    {"id":31,"name":"Melta Cannon","pts":25},
-	    {"id":32,"name":"Multiple Rocket Launcher","pts":25},
-	    {"id":33,"name":"Quake Cannon","pts":50},
-      {"id":34,"name":"Volcano Cannon","pts":50},
-      {"id":35,"name":"Plasma Annihilator","pts":50},
-      {"id":36,"name":"Vortex Missile Launcher","pts":25},
-      {"id":37,"name":"Titan Warp Missile Launcher","pts":25},
-      {"id":38,"name":"Titan Power Fist","pts":25},
-
-	    {"id":40,"name":"Inferno Cannon","pts":0},
-	    {"id":41,"name":"Plasma Blastgun","pts":0},
-      {"id":42,"name":"Turbo-Laser Destructor","pts":25},
-	    {"id":43,"name":"Vulcan Mega Bolter","pts":0},
-
-
-	    {"id":50,"name":"Carapace Multilaser","pts":50},
-	    {"id":51,"name":"Carapace Missiles","pts":25},
-	    {"id":52,"name":"9 Secutarii and 1 Tech Priest","pts":225},
-
-
-	    {"id":60,"name":"2x Belicosa Volcano Cannon","pts":0},
-      {"id":61,"name":"2x Plasma Destructor","pts":0},
-	    {"id":62,"name":"2x Quake Cannon","pts":0},
-	    {"id":63,"name":"2x Laser Blaster","pts":0},
-
-	    {"id":70,"name":"Apocalypse Missile Launcher","pts":0},
-	    {"id":71,"name":"Vulcan Mega-Bolter","pts":0},
-
-      {"id":80,"name":"Turbo-Laser Destructor","pts":0},
-      {"id":81,"name":"Gatling Blaster","pts":0},
-      {"id":82,"name":"Corvus Assault Pod","pts":0},
-	    {"id":83,"name":"Titan Power Fist","pts":0},
-      {"id":84,"name":"Laser Burner","pts":0},
-	    {"id":85,"name":"Melta Cannon","pts":0},
-
-	    {"id":90,"name":"Warp Missile","pts":0},
-	    {"id":91,"name":"Deathstrike Missile","pts":0},
-	    {"id":92,"name":"Quad Hydra Autocannon","pts":0},
-	    {"id":93,"name":"Carapace Landing Pad","pts":0},
-
-	    {"id":95,"name":"Apocalypse Missile Launcher","pts":0},
-	    {"id":96,"name":"Titan Plasma Cannon","pts":0},
-	    {"id":97,"name":"Laser Blaster","pts":0},
-	    {"id":98,"name":"Volcano Cannon","pts":0},
-      {"id":99,"name":"Chimeradon","pts":0}
+	"id":"Collegia Titanica",
+	"version":"0.01",
+	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
+	"by":"",
+	"sections":[
+		{"name":"BATTLE TITANS", "formations":[
+			{"id":502, "name":"Emperor Titan", 		"pts":900,"upgrades":[81,82,83,84]},
+			{"id":503, "name":"Warlord Titan", 		"pts":675, "upgrades":[80,81,82,83,84]},
+			{"id":504, "name":"Reaver Titan",			"pts":550, "upgrades":[80,81,82,83,84]}
+		]},
+		{"name":"SCOUT TITANS", "formations":[
+			{"id":551, "name":"Warhound Titan",		"pts":275, "upgrades":[80,82]},
+			{"id":552, "name":"Warhound Titan Pack",	"pts":500, "upgrades":[80,82]}
+		]},
+		{"name":"SUPPORT FORMATIONS", "formations":[
+			{"id":561, "name":"Ironstrider Cavaliers",			"pts":175, "units":" 6 Ironstrider Ballistarius", "upgrades":[]},
+			{"id":562, "name":"Sydonian Dragoons",			"pts":175, "units":"6 Sydonian Dragoons", "upgrades":[]},
+			{"id":563, "name":"Skitarii Maniple",	"pts":225, "units":"One Tech Priest, nine Skitarii Vanguard", "upgrades":[]},
+			{"id":564, "name":"Avenger Strike Fighters",		"pts":175, "units":"2 Avenger Strike Fighters", "upgrades":[]},
+			{"id":565, "name":"Orbital Support",		"pts":200, "units":"One Ark Mechanicus Battleship", "upgrades":[]}
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Imperator Configuration",	"pts":0},
+		{"id":12, "name":"Warmonger Configuration",	"pts":0},
+		{"id":13, "name":"Inferno Gun", 		"pts":0},
+		{"id":14, "name":"Vulcan Megabolter",		"pts":0},
+		{"id":15, "name":"Plasma Blastgun",		"pts":0},
+		{"id":16, "name":"Turbo-laser Destructor",	"pts":25},
+		{"id":30, "name":"Apocalypse Missile Launcher",	"pts":25},
+		{"id":25, "name":"Laser Burner",		"pts":0},
+		{"id":26, "name":"Corvus Assault Pod",		"pts":0},
+		{"id":27, "name":"Carapace Landing Pad",	"pts":0},
+		{"id":28, "name":"Plasma Cannon",		"pts":25},
+		{"id":29, "name":"Gatling Blaster",		"pts":25},
+		{"id":31, "name":"Close Combat Weapon",		"pts":25},
+		{"id":32, "name":"Melta Cannon",		"pts":50},
+		{"id":33, "name":"Laser Blaster",		"pts":50},
+		{"id":34, "name":"Volcano Cannon",		"pts":50},
+		{"id":35, "name":"Plasma Destructor",		"pts":75},
+		{"id":36, "name":"Support Missile",		"pts":75},
+		{"id":37, "name":"Quake Cannon",		"pts":75},
+		{"id":80, "name":"Single Weapon System Surcharge", 	"pts":25},
+		{"id":81, "name":"Legate",			"pts":50},
+		{"id":82, "name":"Veteran Princeps",		"pts":25},
+		{"id":83, "name":"Carapace Multi-Lasers",	"pts":50},
+		{"id":84, "name":"Sacred Icon",			"pts":50}
+	],
+	"formationConstraints":[
+		{"max":1, "from":[565]},
+		{"max":1, "name":"Support Formation", "from":[561,562,563,564,565,566,567], "forEach":[502,503,504,551,552], "name2":"Titan Formation"},
+		{"maxPercent":100, "from":[561,562,563,564,565,566,567]},
+		{"max":2, "name":"Scout Titan Formations", "from":[551,552], "forEach":[502,503,504], "name2":"Battle Titan"}
+	],
+	"upgradeConstraints":[
+		{"min":1, "max":1, "from":[11,12], "appliesTo":[502]},
+		{"min":2, "max":2, "from":[13,14,15,16], "appliesTo":[551]},
+		{"min":4, "max":4, "from":[13,14,15,16], "appliesTo":[552]},
+		{"min":3, "max":3, "from":[30,13,14,15,16,25,26,27,28,29,31,32,33,34,35,36,37], "appliesTo":[504]},
+		{"min":4, "max":4, "from":[16,13,14,15,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[503]},
+    {"max":2, "from":[35,36], "appliesTo":[503]},
+    {"max":1, "from":[35,36], "appliesTo":[504]},
 
 
-
-],
-"formationConstraints":[
-    {"max":1, "perArmy":true, "from":[500]},
-		{"max":1, "perArmy":true, "from":[534]},
-		{"max":2, "name":"", "from":[510], "forEach":[500,501,503], "name2":"Battle Titan"},
-    {"maxPercent":40,"name":"Adeptus Mechanicus Allies","from":[530,532,540]}
-],
-"upgradeConstraints":[
-        {"max":1, "perArmy":true, "from":[10]},
-        {"max":1, "perArmy":true, "from":[52]},
-        {"max":1,"from":[10,11],"appliesTo":[500,501,502,503]},
-        {"max":1,"from":[13],"appliesTo":[510]},
-        {"max":1,"from":[15],"appliesTo":[530]},
-
-        {"min":1,"max":1,"from":[20,21],"appliesTo":[500]},
-
-        {"min":4,"max":4,"from":[30,31,32,33,34,35,36,37,38],"appliesTo":[501]},
-        {"min":0,"max":2,"from":[32,36,37],"appliesTo":[501]},
-        {"min":0,"max":2,"from":[38],"appliesTo":[501]},
-
-        {"min":3,"max":3,"from":[30,31,32,33,34,35,36,37,38],"appliesTo":[503]},
-        {"min":0,"max":1,"from":[32,36,37],"appliesTo":[503]},
-        {"min":0,"max":2,"from":[38],"appliesTo":[503]},
-
-        {"min":2,"max":2,"from":[40,41,42,43],"appliesTo":[510]},
-        {"min":0,"max":1,"from":[41],"appliesTo":[510]},
-        {"min":0,"max":1,"from":[42],"appliesTo":[510]},
-
-        {"min":0,"max":1,"from":[50]},
-        {"min":0,"max":1,"from":[51]},
-
-        {"min":0,"max":5,"from":[99]}
-]
+    {"max":1, "from":[80]},
+		{"max":1, "perArmy":true, "from":[81]},
+		{"max":1, "from":[82]},
+		{"max":1, "from":[83]},
+		{"max":1, "from":[84]}
+	]
 }
