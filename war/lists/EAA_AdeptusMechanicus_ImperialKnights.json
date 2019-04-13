@@ -19,11 +19,9 @@
 			{"id":572, "name":"Knight Valiant",	"pts":200, "units":"One Knight Valiant", "upgrades":[]}
 		]},
 	  {"name":"Support Formations (Max 2 per Core Household)", "formations":[
-			{"id":521, "name":"Planetary Defence Company",	"pts":150, "units":"9 PDF Infantry, 1 Commander", "upgrades":[20,21,23,22]},
 			{"id":522, "name":"AAA Platoon", 		"pts":125, "units":"3 Heavy AA, 3 Gun Emplacements", "upgrades":[]},
 			{"id":523, "name":"Howitzer Platoon",		"pts":150, "units":"3 Howitzers, 3 Gun Emplacements", "upgrades":[]},
-			{"id":524, "name":"Rough Riders",		"pts":150, "units":"6 Rough Riders", "upgrades":[]},
-			{"id":525, "name":"Light Mechanized",			"pts":125, "units":"3 Centaurs, 3 PDF Infantry", "upgrades":[20,21]}
+			{"id":524, "name":"Rough Riders",		"pts":150, "units":"6 Rough Riders", "upgrades":[]}
 		]},
 
 		{"name":"Imperial Navy (Max 1/3)", "formations":[
@@ -52,9 +50,9 @@
 		{"id":23, "name":"Sniper",								"pts":25},
 
 
-		{"id":32, "name":"Ironstorm Missile Pod",																			"pts":25},
-		{"id":33, "name":"Stormspear Rocket Pod",																			"pts":25},
-		{"id":34, "name":"Twin Icarus Autocannon",																		"pts":25}
+		{"id":32, "name":"Ironstorm Missile Pod",																			"pts":10},
+		{"id":33, "name":"Stormspear Rocket Pod",																			"pts":10},
+		{"id":34, "name":"Twin Icarus Autocannon",																		"pts":15}
 
 	],
 	"formationConstraints":[
