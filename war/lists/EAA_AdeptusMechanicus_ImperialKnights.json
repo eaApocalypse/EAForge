@@ -19,7 +19,7 @@
 			{"id":572, "name":"Knight Valiant",	"pts":200, "units":"One Knight Valiant", "upgrades":[]}
 		]},
 	  {"name":"Support Formations (Max 2 per Core Household)", "formations":[
-			{"id":522, "name":"AAA Platoon", 		"pts":125, "units":"3 Heavy AA, 3 Gun Emplacements", "upgrades":[]},
+			{"id":522, "name":"AA Platoon", 		"pts":125, "units":"3 Heavy AA, 3 Gun Emplacements", "upgrades":[]},
 			{"id":523, "name":"Howitzer Platoon",		"pts":150, "units":"3 Howitzers, 3 Gun Emplacements", "upgrades":[]},
 			{"id":524, "name":"Rough Riders",		"pts":150, "units":"6 Rough Riders", "upgrades":[]}
 		]},
