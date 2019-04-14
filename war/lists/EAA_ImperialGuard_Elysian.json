@@ -1,7 +1,7 @@
 {
 	"id":"Elysian Drop Troops",
 	"version":"0.01",
-	"by":"EA-Apocalypse",
+	"by":"EA-Eternal War",
 	"sections":[
 		{"name":"Elysian Core Formations", "formations":[
 			{"id":502, "name":"Regimental HQ", "pts":250, "upgrades":[91,92,10,11], "units":"1 Elysian Supreme Commander unit and 7 Drop Troops units."},

@@ -1,7 +1,7 @@
 {
-	"id":"EAA Death Korps of Krieg",
+	"id":"Death Korps of Krieg",
 	"version":"0.01",
-	"by":"EA Apocalypse",
+	"by":"EA-Eternal War",
 	"sections":[
 		{"name":"DEATH KORPS CORE FORMATIONS (Max 4 upgrades per formation)", "formations":[
 			{ "id":501, "name":"Regimental HQ", "pts":350,  "upgrades":[21,30,31,33,34,35,36] },

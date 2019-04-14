@@ -1,7 +1,7 @@
 {
    "id": "Tau Kelshan",
-   "version": "EA-Apocalypse",
-   "by": "1.2",
+   "version": "0.01",
+   "by": "EA-Eternal War",
    "sections": [
       { "name": "CORE GROUP",
          "formations": [
@@ -38,7 +38,7 @@
       {"id": 15,"name": "Shas'el","pts": 25},
       {"id": 16,"name": "Shas'o","pts": 75},
       {"id": 17,"name": "Protector Class Cruiser","pts": 0},
-      {"id": 22,"name": "Custodian Class Battleship","pts": 25},     
+      {"id": 22,"name": "Custodian Class Battleship","pts": 25},
       {"id": 18,"name": "KV-104 Riptide","pts": 100},
       {"id": 19,"name": "KV-139 Supremacy Suit - Heavy Rail Cannon","pts": 0},
       {"id": 20,"name": "KV-139 Supremacy Suit - Nexus Missile System","pts": 0},

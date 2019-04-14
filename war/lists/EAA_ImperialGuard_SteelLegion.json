@@ -1,7 +1,7 @@
 {
 	"id":"Armageddon Steel Legion",
 	"version":"0.01",
-	"by":"EA-Apocalypse",
+	"by":"EA-Eternal War",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
 			{"id":500, "name":"Regimental HQ", 				"pts":450, "units":"1 Steel Legion Supreme Commander, 8 Infantry, 3 Heavy Weapon Squads and 6 Chimeras ", "upgrades":[52,53,54,57,58,55,59,60,61,62,63,70]},

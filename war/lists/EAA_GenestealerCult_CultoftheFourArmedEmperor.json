@@ -1,7 +1,7 @@
 {
 	"id":"Genestealer Cult - Cult of the Four Armed Emperor",
-	"version":"1.11",
-	"by":"EA-Apocalypse",
+	"version":"0.01",
+	"by":"EA-Eternal War",
 	"notes":[""],
 	"sections":[
 
@@ -20,7 +20,7 @@
 			{ "id":507, "name":"Hybrid Metamorphs", "pts":275, "units":"8 Hybrid Metamorphs", "upgrades":[14,63]},
 			{ "id":508, "name":"Achilles Ridgerunner", "pts":200, "units":"6 Achilles Ridgerunners", "upgrades":[]},
 			{ "id":521, "name":"Super Heavy Tank", "pts":200, "units":"Baneblade", "upgrades":[12] },
-			{ "id":522, "name":"Leman Russ", "pts":290, "upgrades":[48,12] },			
+			{ "id":522, "name":"Leman Russ", "pts":290, "upgrades":[48,12] },
 			{ "id":523, "name":"Artillery", "pts":225, "upgrades":[48,12] },
 			{ "id":524, "name":"Sentinels", "pts":100, "units":"4 Sentinels", "upgrades":[12] },
 			{ "id":525, "name":"Deathstrikes", "units":"2 Deathstrike Missiles", "pts":200, "upgrades":[12]}
@@ -34,7 +34,7 @@
 
 
 	],
-	"upgrades":[	
+	"upgrades":[
 		{"id":11, "name":"Genestealer Patriarch.",				"pts":75},
 		{"id":12, "name":"Genestealer Magus",					"pts":0},
 		{"id":13, "name":"Genestealer Primus",					"pts":50},
@@ -74,11 +74,11 @@
 		{"id":62, "name":"Woldquads",						"pts":0},
 		{"id":63, "name":"Armored Limousines",					"pts":0},
 		{"id":64, "name":"No Transports",					"pts":0},
-		
-		{"id":66, "name":"3 Bombards",						"pts":0}
-	
 
- 
+		{"id":66, "name":"3 Bombards",						"pts":0}
+
+
+
 	],
 	"formationConstraints":[
 		{"min":1, "from":[500]},
@@ -88,7 +88,7 @@
 		{"max":1, "name":"Genestealer Brood formations", "from":[503], "forEach":[500,501,502], "name2":"Hybrid Brood and Brood Brother formations"}
 	],
 	"upgradeConstraints":[
- 		{"max":1, "perArmy":true, "from":[11]}, 
+ 		{"max":1, "perArmy":true, "from":[11]},
 		{"min":8, "max":8, "from":[21,22], "appliesTo":[501]},
 		{"min":1, "max":1, "from":[40,41], "appliesTo":[502]},
 		{"min":1, "max":1, "from":[14], "appliesTo":[502]},
@@ -99,7 +99,7 @@
 		{"min":1, "max":1, "from":[66], "appliesTo":[523]},
 		{"min":6, "max":6, "from":[56], "appliesTo":[522]},
 		{"max":1, "from":[12], "appliesTo":[502,521,522,523,524,525]},
-  
+
 		{"max":1, "perArmy":true, "from":[64]},
 		{"max":3, "perArmy":true, "from":[12]},
 		{"max":1, "perArmy":true, "from":[505]},

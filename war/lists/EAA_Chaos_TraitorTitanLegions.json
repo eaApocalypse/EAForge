@@ -2,7 +2,7 @@
 	"id":"Traitor Titans",
 	"version":"0.01",
 	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
-	"by":"",
+   "by": "EA-Eternal War",
 	"sections":[
 		{"name":"BATTLE TITANS", "formations":[
 			{"id":503, "name":"Warlord Titan", 		"pts":675, "upgrades":[80,81,82,83,84]},

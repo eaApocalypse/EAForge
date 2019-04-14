@@ -2,7 +2,7 @@
 	"id":"Snakebites",
 	"version":"0.01",
 	"notes":["A Warlord must be selected and assigned to the formation with the most units/DC."],
-	"by":"EA Apocalypse",
+	"by":"EA-Eternal War",
 	"sections":[
 		{"name":"WAR HORDES", "formations":[
 			{"id":500, "name":"Warband",				"pts":-20,	"upgrades":[11,13,39,23,52,29,57,58,61,67]},

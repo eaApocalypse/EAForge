@@ -1,7 +1,7 @@
 {
    "id": "Titan Force",
-   "version": "1.1",
-   "by": "EA-Apocalypse",
+   "version": "0.01",
+   "by": "EA-Eternal War",
    "sections": [
       {"name": "Eldar Titan Special", "formations": [
 	    {"id": 500, "name": "Wraithgate", "pts": 50, "upgrades": []}
@@ -12,7 +12,7 @@
          ]},
       {"name": "Eldar Scout Titans", "formations": [
             {"id": 521, "name": "Revenant Titan Twins", "pts": 150, "upgrades": [25]}
-            
+
 	 ]},
       {"name": "Eldar Titan Support", "formations": [
 	    {"id": 531, "name": "Engines of Vaul Troupe", "pts": 50, "upgrades": [17,18,19]},
@@ -42,8 +42,8 @@
 
    ],
    "formationConstraints": [
-      {"max": 1, "from": [500]}, 
-      {"max": 3, "from": [521]}, 
+      {"max": 1, "from": [500]},
+      {"max": 3, "from": [521]},
       {"max": 1, "from": [511,512]},
       {"max": 2, "name": "Aircraft", "from": [541]},
       {"max": 3, "name": "Support", "from": [531,532,533,534,535],  "forEach": [521], "name2": "Scout Titan" }
@@ -58,6 +58,6 @@
       {"max": 1, "min": 1, "from": [12,13,26,27], "appliesTo": [512]},
       {"max": 1, "perArmy": true, "from": [11]}
 
-	  
+
    ]
 }

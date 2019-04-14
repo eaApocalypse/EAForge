@@ -1,7 +1,7 @@
 {
    "id": "Iyanden Craftworld",
-   "version": "1.3",
-   "by": "EA-Apocalypse",
+   "version": "0.01",
+   "by": "EA-Eternal War",
    "sections": [
       {"name": "INDIVIDUALS", "formations": [
             {"id": 507, "name": "Wraithgate", "pts": 50, "upgrades": []},
@@ -80,7 +80,7 @@
       {"max": 1, "from": [517]},
       {"maxPercent": 33, "name": "War Engines & Allies", "from": [515,516,517,518,519,520,521,522,523]},
       {"max": 2, "name": "Troupes", "from": [500,501,502,503,504,505,530,550,551], "forEach": [510,511,512], "name2": "Iyanden Host"},
-      {"max": 1, "name": "Spirit Walker formation", "from":[512], "forEach":[510,511], "name2": "Spirit Guard or Spirit Blade formation"} 
+      {"max": 1, "name": "Spirit Walker formation", "from":[512], "forEach":[510,511], "name2": "Spirit Guard or Spirit Blade formation"}
    ],
    "upgradeConstraints": [
       {"max": 1, "perArmy": true, "from": [62]},

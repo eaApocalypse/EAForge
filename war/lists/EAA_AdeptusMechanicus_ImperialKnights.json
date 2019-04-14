@@ -2,7 +2,7 @@
 	"id":"Adeptus Mechanicus - Imperial Knights",
 	"version":"0.01",
 	"notes":[""],
-	"by":"EA-Apocalypse",
+	"by":"EA-Eternal War",
 	"sections":[
 		{"name":"Core Banner", "formations":[
 			{"id":501, "name":"Knight Banner",	"pts":400, "upgrades":[32,33,34]}
