@@ -29,7 +29,7 @@
 
             {"id": 516, "name": "Evil Sunz Warbike Outriders", "pts": 150, "units":"5 Warbike Outriders", "upgrades": []},
 
-	        {"id": 520, "name": "Evil Sunz Kroozer", "pts": 100, "upgrades": []}
+	          {"id": 520, "name": "Evil Sunz Kroozer", "pts": 100, "upgrades": []}
          ]
       },
       {
