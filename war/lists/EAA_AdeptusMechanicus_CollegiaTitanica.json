@@ -5,7 +5,7 @@
 	"by":"EA-Eternal War",
 	"sections":[
 		{"name":"BATTLE TITANS", "formations":[
-			{"id":502, "name":"Emperor Titan", 		"pts":900,"upgrades":[81,82,83,84]},
+			{"id":502, "name":"Emperor Titan", 		"pts":1000,"upgrades":[81,82,83,84]},
 			{"id":503, "name":"Warlord Titan", 		"pts":675, "upgrades":[80,81,82,83,84]},
 			{"id":504, "name":"Reaver Titan",			"pts":550, "upgrades":[80,81,82,83,84]}
 		]},
