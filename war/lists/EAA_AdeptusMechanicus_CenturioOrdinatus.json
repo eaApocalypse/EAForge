@@ -17,7 +17,7 @@
 			{ "id":516, "name":"Onager Cohort", "pts":-50, "upgrades":[] }
 		]},
 		{"name":"Centurio Ordinatus", "formations":[
-			{ "id":571, "name":"Ordinati Minoris", "pts":0, "upgrades":[] },
+			{ "id":571, "name":"Ordinati Minoris", "pts":0, "upgrades":[35,36,37,38,39,40,41,42,43,44,45,46,47,48,49] },
 			{ "id":572, "name":"Ordinati Majoris", "pts":0, "upgrades":[] }
 		]},
 		{"name":"Adeptus Mechanicus Navy ", "formations":[
@@ -64,18 +64,24 @@
 	  {"id":33, "name":"Stormspear Rocket Pod",																			"pts":25},
 		{"id":34, "name":"Twin Icarus Autocannon",																		"pts":25},
 
-		{"id":35, "name":"Ordinati Minoris - Gatling Blaster",												"pts":150},
+		{"id":35, "name":"Ordinati Minoris - Gatling Blaster",												"pts":125},
 		{"id":36, "name":"Ordinati Minoris - Melta Cannon",														"pts":150},
-		{"id":37, "name":"Ordinati Minoris - Multiple Rocket Launcher",								"pts":150},
-		{"id":38, "name":"Ordinati Minoris - Quake Cannon ",													"pts":175},
-		{"id":39, "name":"Ordinati Minoris - Volcano Cannon",													"pts":175},
-		{"id":40, "name":"Ordinati Minoris - Plasma Annihilator ",										"pts":175},
-		{"id":41, "name":"Ordinati Minoris - Vortex Missile Launcher",								"pts":150},
-		{"id":42, "name":"Ordinati Minoris - Titan Warp Missile Launcher ",						"pts":150},
-		{"id":43, "name":"Ordinati Majoris - Armageddon",															"pts":425},
-		{"id":44, "name":"Ordinati Majoris - Golgotha",																"pts":425},
-		{"id":45, "name":"Ordinati Majoris - Mars",																		"pts":425},
-		{"id":46, "name":"Ordinati Majoris - Magentus",																"pts":425}
+		{"id":37, "name":"Ordinati Minoris - Quake Cannon ",													"pts":175},
+		{"id":38, "name":"Ordinati Minoris - Volcano Cannon",													"pts":175},
+		{"id":39, "name":"Ordinati Minoris - Carapace Landing Pad",										"pts":150},
+		{"id":40, "name":"Ordinati Minoris - Apocalypse Missile Launcher",						"pts":150},
+		{"id":41, "name":"Ordinati Minoris - Laser Blaster",													"pts":150},
+		{"id":42, "name":"Ordinati Minoris - Laser Burner",														"pts":125},
+		{"id":43, "name":"Ordinati Minoris - Plasma Cannon",													"pts":125},
+		{"id":44, "name":"Ordinati Minoris - Plasma Destructor",											"pts":175},
+		{"id":45, "name":"Ordinati Minoris - Barrage Missile",												"pts":150},
+		{"id":46, "name":"Ordinati Minoris - Deathstrike Missile",										"pts":150},
+		{"id":47, "name":"Ordinati Minoris - Vortex Missile",													"pts":150},
+		{"id":48, "name":"Ordinati Minoris - Warp Missile",														"pts":150},
+		{"id":49, "name":"Ordinati Minoris - Titan Power Fist",												"pts":125},
+		{"id":51, "name":"Ordinati Majoris - Armageddon",															"pts":425},
+		{"id":52, "name":"Ordinati Majoris - Golgotha",																"pts":425},
+		{"id":53, "name":"Ordinati Majoris - Mars",																		"pts":425}
 
 
 
@@ -91,8 +97,8 @@
 	],
 	"upgradeConstraints":[
   	{"max":1, "from":[1]},
-		{"min":2, "max":2, "from":[35,36,37,38,39,40,41,42], "appliesTo":[571]},
-		{"min":1, "max":1, "from":[43,44,45], "appliesTo":[572]},
+		{"min":2, "max":3, "from":[35,36,37,38,39,40,41,42,43,44,45,46,47,48,49], "appliesTo":[571]},
+		{"min":1, "max":1, "from":[51,52,53], "appliesTo":[572]},
 		{"min":4, "max":6, "from":[5], "appliesTo":[510]},
   	{"min":0, "max":1, "from":[3,4], "appliesTo":[502]},
 		{"min":0, "max":5, "from":[10], "appliesTo":[502]},
