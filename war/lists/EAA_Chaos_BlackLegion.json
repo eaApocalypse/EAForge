@@ -1,6 +1,7 @@
 {
 	"id":"Black Legion",
-	"version":"1.32",
+	"version":"0.01",
+	"by":"EA-Eternal War",
 	"notes":
 		["Add one free Lesser Daemon to Daemon pool per Daemonic Pact"],
 		"by":"EA-Eternal War",
@@ -9,11 +10,11 @@
 			{"id":500, "name":"Daemon Pool", "pts":0, "upgrades":[71,72,73]}
 		]},
 		{"name":"BLACK LEGION CORE FORMATIONS", "formations":[
-			{"id":501, "name":"Black Legion Retinue", "pts":275, "upgrades":[14,15,40,41,42,43,44,70,80]}
+			{"id":501, "name":"Black Legion Retinue", "pts":275, "upgrades":[14,15,40,41,42,43,44,70,80,51,52]}
 		]},
 		{"name":"BLACK LEGION ELITE FORMATIONS", "formations":[
-			{"id":502, "name":"Chaos Terminators", "pts":275, "upgrades":[14,15,41,42,70,80]},
-			{"id":503, "name":"Chosen", "pts":150, "units":"4 Chosen, 2 Chaos Rhinos", "upgrades":[42,70]}
+			{"id":502, "name":"Chaos Terminators", "pts":35, "upgrades":[50,14,15,41,42,70,80,51,52]},
+			{"id":503, "name":"Chosen", "pts":125, "units":"4 Chosen", "upgrades":[40,42,70]}
 		]},
 		{"name":"BLACK LEGION SUPPORT FORMATIONS", "formations":[
 			{"id":504, "name":"Bike Company",	"pts":300, "units":"8 Chaos Space Marines Bikes", "upgrades":[14,70]},
@@ -59,13 +60,14 @@
 
 		{"id":45, "name":"4 Noise Marines", "pts":50},
 		{"id":46, "name":"4 Plague Marines", "pts":50},
-		{"id":47, "name":"4 Khorne Berzerkers", "pts":25},
+		{"id":47, "name":"4 Khorne Berzerkers", "pts":50},
 		{"id":48, "name":"4 Rubric Marines", "pts":50},
 
 		{"id":49, "name":"4 Havocs", "pts":50},
 
-		{"id":50, "name":"Chaos Terminators", "pts":0},
-		{"id":51, "name":"Obliterators", "pts":35},
+		{"id":50, "name":"Chaos Terminators", "pts":60},
+		{"id":51, "name":"Obliterators", "pts":75},
+		{"id":52, "name":"Mutilators", "pts":75},
 
 		{"id":60, "name":"Deathwheel", "pts":225},
 		{"id":61, "name":"Decimator", "pts":150},
@@ -92,7 +94,8 @@
 	],
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "from":[12,13,16]},
-
+		{"min":0, "max":3, "from":[51]},
+		{"min":0, "max":3, "from":[52]},
 		{"min":0, "max":1, "from":[70], "appliesTo":[501,502,503,504,505,507]},
 
 		{"min":1, "max":1, "from":[10,11,12,13], "appliesTo":[501]},
@@ -103,11 +106,10 @@
 		{"max":1, "from":[45,46,47,48], "appliesTo":[501]},
 		{"max":1, "from":[49], "appliesTo":[501]},
 		{"min":0, "max":4, "from":[40,41], "appliesTo":[501]},
-		{"min":0, "max":10, "from":[80], "appliesTo":[501,502]},
+		{"min":0, "max":14, "from":[80], "appliesTo":[501,502]},
 
 		{"min":1, "max":1, "from":[10,11,12,16], "appliesTo":[502]},
-		{"min":4, "max":4, "from":[50,51], "appliesTo":[502]},
-		{"min":0, "max":2, "from":[51], "appliesTo":[502]},
+		{"min":4, "max":6, "from":[50], "appliesTo":[502]},
 		{"min":0, "max":4, "from":[41], "appliesTo":[502]},
 
 		{"min":1, "max":1, "from":[10,11], "appliesTo":[504,505,507]},
