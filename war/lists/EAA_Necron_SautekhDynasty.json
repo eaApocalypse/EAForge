@@ -22,7 +22,7 @@
             {"id": 704, "name": "Letum Maniple", "units":"4 Deathmark units", "pts": 200, "upgrades": [1,5]},
             {"id": 705, "name": "Triarch Maniple", "pts": 275, "upgrades": [1,2,5,23,99]},
             {"id": 708, "name": "Stalker Maniple", "units":"4 Triarch Stalkers", "pts": 200, "upgrades": [88]},
-	    {"id": 709, "name": "Sentry Pylon", "units":"4 Sentry pylons", "pts": 225}
+	          {"id": 709, "name": "Sentry Pylon", "units":"4 Sentry pylons", "pts": 225}
          ]
       },
       {"name": "SAUTEKH NECRON HARVESTERS AND AIRCRAFT",
