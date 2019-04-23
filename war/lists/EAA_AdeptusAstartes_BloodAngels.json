@@ -5,7 +5,7 @@
 
 	"sections":[
 		{"name":"BLOOD ANGEL DETACHMENTS", "formations":[
-			{"id":500, "name":"0-1 Sanguinary Guard", 				"pts":175, "units":"6 Sanguinary Guard", "upgrades":[10,11,12,13, 27,28,29,30, 31,32, 33, 34,35, 37,38]},
+			{"id":500, "name":"0-1 Sanguinary Guard", 				"pts":175, "units":"6 Sanguinary Guard", "upgrades":[10,11,12,13, 27,28,29,30, 31,32, 33, 34,35, 37,38,36]},
 			{"id":501, "name":"Baal Predators", 							"pts":200, "units":"4 Baal Predators ", "upgrades":[10,11,12,13, 31,32]},
 			{"id":502, "name":"Blood Angel Terminators",			"pts":250, "units":"4 Blood Angel Terminators ", "upgrades":[10,11,12,13,33]}
 		]},
@@ -15,8 +15,8 @@
 			{"id":501, "name":"Bikes", 					"pts":200, "upgrades":[10,11,12,13]},
 			{"id":502, "name":"Land Raiders",			"pts":250, "units":"3 Land Raiders", "upgrades":[10,11,12,13, 31,32]},
 			{"id":503, "name":"Predators",				"pts":250, "upgrades":[10,11,12,13, 31,32]},
-			{"id":504, "name":"Tacticals",				"pts":275, "units":"6 Tacticals plus transport", "upgrades":[10,11,12,13, 27,28,29,30, 31,32, 33, 34,35, 37,38]},
-			{"id":505, "name":"Devastators",			"pts":250, "units":"4 Devastators plus transport", "upgrades":[10,11,12,13, 27,28,29,30, 31,32, 33, 34,35, 37,38]},
+			{"id":504, "name":"Tacticals",				"pts":275, "units":"6 Tacticals plus transport", "upgrades":[10,11,12,13, 27,28,29,30, 31,32, 33, 34,35, 37,38,36]},
+			{"id":505, "name":"Devastators",			"pts":250, "units":"4 Devastators plus transport", "upgrades":[10,11,12,13, 27,28,29,30, 31,32, 33, 34,35, 37,38,36]},
 			{"id":510, "name":"Land Speeders",			"pts":200, "upgrades":[10,11,12,13]},
 			{"id":511, "name":"Landing Craft",			"pts":350, "units":"1 Landing Craft", "upgrades":[]},
 			{"id":512, "name":"Scouts",			"pts":150, "upgrades":[27,28,29,30, 34,35]},
@@ -67,6 +67,8 @@
 
 		{"id":34, "name":"Razorback (Twin Heavy Bolter)",						"pts":25},
 		{"id":35, "name":"Razorback (Twin Lascannon)",						"pts":25},
+
+		{"id":36, "name":"Storm Raven Gunship",						"pts":50},
 
 		{"id":37, "name":"Vindicator",						"pts":50},
 		{"id":38, "name":"2x Vindicator",						"pts":75},
