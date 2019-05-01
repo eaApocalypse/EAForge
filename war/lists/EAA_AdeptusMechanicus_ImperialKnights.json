@@ -31,7 +31,7 @@
 			{"id":500, "name":"Knight Banner",	            "pts":425,                                            "upgrades":[32,33,34]}
 		]},
 		{"name":"Support Banners",
- 		 "notes":"(Two Support Banners may be taken for each Core Banner)",
+ 		 "notes":"(One Support Banners may be taken for each Core Banner)",
 		 "formations":[
 			{"id":510, "name":"Armiger Banner",	            "pts":200, "units":"4 Knight-Armigers",               "upgrades":[],      "xref":["Knight Armiger"]},
 			{"id":520, "name":"Cerastus Knight-Lancer",	    "pts":325, "units":"3 Cerastus Knight-Lancer",        "upgrades":[10,18], "xref":["Cerastus Knight-Lancer"]},
