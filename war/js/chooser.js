@@ -539,7 +539,7 @@ var ArmyforgeUI = {
 		}
 
 		if(elem){
-			var mywindow = window.open('', 'PRINT', 'height=10,width=10');
+			var mywindow = window.open('', 'PRINT', 'height=400,width=600');
 			mywindow.document.write('<html><head><title>' + document.title  + '</title>');
 			mywindow.document.write('</head><body style="font-family:monospace;">');
 			mywindow.document.write('<h1>' + document.title  + '</h1>');
