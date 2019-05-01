@@ -57,9 +57,9 @@
 	    {"id":103, "name":"Gaunts (2 Termagaunts, 3 Hormagaunts)", "pts":50,  "xref":["Termagaunts","Hormagaunts"]},
 	    {"id":104, "name":"Gaunts (1 Termagaunts, 4 Hormagaunts)", "pts":50,  "xref":["Termagaunts","Hormagaunts"]},
 	    {"id":105, "name":"Gaunts (5 Hormagaunts)",                "pts":50,  "xref":["Hormagaunts"]},
-		{"id":108, "name":"Biovores (4 Biovores)",                 "pts":75,  "xref":["Biovores"]},
+		{"id":108, "name":"Biovores (4 Biovores)",                 "pts":75,  "xref":["Biovore"]},
 		{"id":109, "name":"Gargoyles (4 Gargoyles)",               "pts":50,  "xref":["Gargoyles"]},
-				
+
 		{"id":107, "name":"Bio-Bomber (2 Harpies)",                "pts":100,  "xref":["Harpy"]},
 		{"id":110, "name":"Carnifex (3 Carnifex)",                 "pts":125,  "xref":["Carnifex"]},
 		{"id":111, "name":"Bio-Support (3 Dactylis)",              "pts":125,  "xref":["Dactylis"]},
@@ -69,19 +69,19 @@
 		{"id":115, "name":"Hierodule (1 Barbed Hierodule)",        "pts":125,  "xref":["Barbed Hierodule"]},
 		{"id":116, "name":"Hierodule (1 Scythed Hierodule)",       "pts":125,  "xref":["Scythed Hierodule"]},
 		{"id":117, "name":"Burrower (2 Trygons)",                  "pts":100,  "xref":["Trygon"]},
-		{"id":118, "name":"Burrower (4 Raveners)",                 "pts":100,  "xref":["Ravener"]},
+		{"id":118, "name":"Burrower (4 Raveners)",                 "pts":100,  "xref":["Raveners"]},
 
 
 		{"id":120, "name":"Mycetic Spore",                         "pts":50,  "xref":["Mycetic Spore"]},
 		{"id":130, "name":"Harridan",                              "pts":150, "xref":["Harridan"]},
-		
+
 		{"id":140, "name":"Genestealers",                          "pts":25},
 		{"id":141, "name":"Brood Lord",                            "pts":25},
-		
+
 		{"id":142, "name":"Lictors",                               "pts":25},
-		
+
 		{"id":150, "name":"2 Harpies",                             "pts":100,  "xref":["Harpy"]},
-		
+
 		{"id":160, "name":"Hierophant",                            "pts":300,  "xref":["Hierophant"]},
 		{"id":161, "name":"Hydraphant",                            "pts":525,  "xref":["Hydraphant"]},
 		{"id":170, "name":"Razorfiend",                            "pts":150,  "xref":["Razorfiend"]},
@@ -92,7 +92,7 @@
 		{"id":213, "name":"Hive Tyrant Shrike",           		   "pts":0,    "xref":["Hive Tyrant Shrike"]},
 		{"id":204, "name":"Dagon Overlord",                        "pts":100,  "xref":["Dagon Overlord"]},
 		{"id":205, "name":"Dagon Overlord Shrike",                 "pts":100,  "xref":["Dagon Overlord Shrike"]},
-		
+
 		{"id":201, "name":"Tyranid Warriors",                      "pts":0,    "xref":["Tyranid Warriors"]},
 		{"id":211, "name":"Tyranid Warrior Shrikes",               "pts":0,    "xref":["Tyranid Warrior Shrikes"]},
 		{"id":202, "name":"Zoanthrope",                            "pts":0,    "xref":["Zoanthrope"]},
@@ -100,7 +100,7 @@
 		{"id":209, "name":"Barbed Hierodule",                      "pts":0,    "xref":["Barbed Hierodule"]},
 		{"id":210, "name":"Scythed Hierodule",                     "pts":0,    "xref":["Scythed Hierodule"]},
 		{"id":214, "name":"Trygon Prime",                          "pts":150,    "xref":["Trygon Prime"]},
-		{"id":215, "name":"3 Ravener Alphas",                      "pts":100,    "xref":["Ravener Alpha"]},
+		{"id":215, "name":"3 Ravener Alphas",                      "pts":100,    "xref":["Ravener Alphas"]},
 		{"id":216, "name":"Barbed Hierodule Prime",                "pts":150,    "xref":["Barbed Hierodule Prime"]},
 		{"id":217, "name":"Scythed Hierodule Prime",               "pts":150,    "xref":["Scythed Hierodule Prime"]},
 		{"id":218, "name":"Hive Nest",                             "pts":125,    "xref":["Hive Nest"]}
@@ -113,9 +113,9 @@
     {"max":1,         "name":"Common Independent Swarms", "from":[570,580], "forEach":[500,510,520], "name2":"Primary Nexus Swarm"},
 	{"maxPercent":33, "name":"Rare Independent Swarms", "from":[590,600]},
     {"max":1,         "name":"Rare Independent Swarms", "from":[590,600], "forEach":[500,510,520], "name2":"Primary Nexus Swarm"},
-	
+
 	{"mandatoryUpgrade":true, "name":"(gaunt/biovore/gargoyle)", "from":[520,530], "includeUpgrade":[100,101,102,103,104,105,108,109]}
-	
+
   ],
   "upgradeConstraints":[
     {"max":1,                 "name":"Mycetic Spore", "from":[120], "appliesTo":[510,520]},
@@ -128,27 +128,27 @@
     {"min":1, "max":1, "from":[203,204,205,213], "appliesTo":[510], "composite":true},
     {"min":4, "max":4, "from":[201,202,211], "appliesTo":[510], "composite":true},
 	{"min":2, "max":4, "from":[100,101,102,103,104,105,  108,109, 107,110,111,112,113,114,115,116,117,118], "appliesTo":[510], "composite":true},
-	
+
     {"min":3, "max":3, "from":[201,202,211], "appliesTo":[520], "composite":true},
     {"min":2, "max":3, "from":[100,101,102,103,104,105,  108,109, 107,110,111,112,113,114,115,116,117,118,120], "appliesTo":[520], "composite":true},
 
-	
+
 	{"min":1, "max":1, "from":[218], "appliesTo":[530], "composite":true},
 	{"min":1, "max":2, "from":[100,101,102,103,104,105,  108,109, 111,112], "appliesTo":[530], "composite":true},
 
 	{"min":1, "max":1, "from":[216,217], "appliesTo":[540], "composite":true},
 	{"min":1, "max":2, "from":[100,101,102,103,104,105,  110,111,112,113,114,115,116], "appliesTo":[540], "composite":true},
-	
+
 	{"min":1, "max":1, "from":[215,214], "appliesTo":[550], "composite":true},
     {"min":1, "max":2, "from":[118,117], "appliesTo":[550], "composite":true},
-	
+
     {"min":1, "max":1, "from":[130],     "appliesTo":[560], "composite":true},
     {"min":1, "max":2, "from":[107,109], "appliesTo":[560], "composite":true},
-	
-	
+
+
     {"min":6, "max":9, "from":[140],     "appliesTo":[570]},
     {"min":1, "max":1, "from":[141],     "appliesTo":[570]},
-	
+
     {"min":0, "max":2, "from":[142],     "appliesTo":[580]},
 
     {"min":1, "max":1, "from":[160,161], "appliesTo":[590]},
