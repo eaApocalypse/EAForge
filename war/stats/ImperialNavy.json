@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Imperial Navy",
+    "specialRules": [
+      {
+            "title": "God Machine Killer (GMK)",
+            "description": [
+              "Has TK(D6) instead of TK(D3) against WE with the God Machine special rule."
+        ]
+      }
+    ],
+    "unit": [
+    {
+      "name": "Thunderbolt Fighter",
+      "type": "AC",
+      "speed": "Fighter-Bomber",
+      "armour": 6,
+      "weapons": [
+        "AC Multilaser",
+        "AC Underwing Rockets",
+        "AC Storm Bolters"
+      ]
+    },
+    {
+      "name": "Lightning Strike Fighter",
+      "type": "AC",
+      "speed": "Fighter",
+      "armour": 6,
+      "weapons": [
+        "AC Lascannon",
+        "AC Underwing Rockets"
+      ]
+    },
+    {
+      "name": "Avenger Strike Fighters",
+      "type": "AC",
+      "speed": "Fighter-Bomber",
+      "armour": 5,
+      "weapons": [
+        "AC Avenger Bolt Cannon",
+        "AC Twin Lascannon",
+        "AC Heavy Stubber"
+      ]
+    },
+    {
+      "name": "Marauder Bomber",
+      "type": "AC",
+      "speed": "Bomber",
+      "armour": 4,
+      "weapons": [
+        "AC Twin Lascannon",
+        "AC Bomb Racks",
+        "AC Heavy Bolter Turret|2|"
+      ]
+    },
+    {
+      "name": "Marauder Colossus Bomber",
+      "type": "AC",
+      "speed": "Bomber",
+      "armour": 4,
+      "weapons": [
+        "AC Twin Lascannon",
+        "AC Colossus Bomb",
+        "AC Heavy Bolter Turret|2|"
+      ]
+    },
+
+    {
+      "name": "Lunar Class Cruiser",
+      "type": "SC",
+      "weapons": [
+		"Orbital Bombardment 3BP",
+        "Pin Point"
+      ]
+    },
+    {
+      "name": "Emperor Class Battleship",
+      "type": "SC",
+      "weapons": [
+		"Orbital Bombardment 8BP"
+      ],
+      "specialRules": [
+        "Slow to Arrive (may only arrive on the battlefield from turn 2 onwards)"
+      ]
+    }
+
+
+    ]
+  }
+]

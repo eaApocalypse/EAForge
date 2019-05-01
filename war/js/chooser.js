@@ -8,6 +8,22 @@ Array.prototype.countAll = function(elements) {
 	return this.findAll( function(x){ return elements.member(x); } ).length;
 }
 
+// count weighted instances of elements...
+Array.prototype.countWeighted = function(elements, testWeight) {
+	var tArray = this.findAll( function(x){ return elements.member(x); } );
+	var total = 0;
+	tArray.each( function(x){ total += x.weight; });		// calculate current total
+	total += testWeight;							        // then work out if adding another of this type would take it over the max value
+	return total;
+}
+// count mutually exclusive instances of elements...
+Array.prototype.countExclusive = function(elements, upgradeType) {
+	var counter = this.findAll( function(x){ return elements.member(x); } ).length;
+	var tcounter = this.findAll( function(x){ return x.id == upgradeType.id; } ).length;	//selected upgrades includes this item
+	var	total = (counter == tcounter) ? 0 : 1;
+	return total;
+}
+
 // removes the first instance of element...
 Array.prototype.remove = function(element) {
 	this.splice(this.indexOf(element), 1);
@@ -30,7 +46,7 @@ var ArmyforgeUI = {
 	urlData:{},
 	activate:function(id) {
 		var msgDiv = $('menuItemMsg' + id);
-		msgDiv.hide();	
+		msgDiv.hide();
 		var row = $('menuItem' + id);
 		row.removeClassName('inactive');
 		row.addClassName('interactive');
@@ -44,14 +60,14 @@ var ArmyforgeUI = {
 		ArmyforgeUI.updatePoints();
 		ArmyforgeUI.checkUpgradeMenuItems();
 		ArmyforgeUI.checkFormationMenuItems();
-		ArmyforgeUI.checkWarnings();		
+		ArmyforgeUI.checkWarnings();
 	},
 
 	addUpgrade:function(formation, upgradeType) {
 		formation.upgrades.push( upgradeType );
 		ArmyforgeUI.updateUpgrade(formation, upgradeType);
-		ArmyforgeUI.checkUpgradeMenuItems();		
-		ArmyforgeUI.checkWarnings();		
+		ArmyforgeUI.checkUpgradeMenuItems();
+		ArmyforgeUI.checkWarnings();
 	},
 
 	checkWarnings:function() {
@@ -87,21 +103,21 @@ var ArmyforgeUI = {
 					ArmyforgeUI.deactivate(id,msgs);
 				}
 			});
-			
-			// upgrade swaps			
+
+			// upgrade swaps
 			f.upgrades.uniq().each(function(u) {
 				f.type.optionsFor(u).each( function(o) {
-					var id = '_' + f.id + '_' + u.id + '_' + o.id; 
+					var id = '_' + f.id + '_' + u.id + '_' + o.id;
 					var msgs = f.cannotSwap(u,o);
 					if (msgs.empty()) {
 						ArmyforgeUI.activate(id);
 					}
 					else {
 						ArmyforgeUI.deactivate(id,msgs);
-					}					
+					}
 				});
 			});
-		});				
+		});
 	},
 
 	createMenuItem:function(id,name,pts) {
@@ -115,15 +131,15 @@ var ArmyforgeUI = {
 		return item;
 	},
 
-	createMenu:function(name,items) {
+	createMenu:function(name,items,notes) {
 		var newTable = new Element('table').update(
 								new Element('tr').update(
-									new Element('th', {colspan:2}).update(name) ));		
-		if (items.length < 1) {	
+									new Element('th', {colspan:2}).update(name + (notes ? '</br><i>' + notes + '</i>' : '')) ));
+		if (items.length < 1) {
 			var listItem = new Element('tr', {'class':'listItem even'}).update(
 									new Element('td', {colspan:'2', 'class':'inactive'}).update('None available') );
-			newTable.insert(listItem);		
-		};		
+			newTable.insert(listItem);
+		};
 		items.each(function(i) {
 			newTable.insert(i);
 		});
@@ -143,7 +159,7 @@ var ArmyforgeUI = {
 				points = '+' + points;
 			}
 			var menuItem = ArmyforgeUI.createMenuItem(id, x.name, points);
-			menuItems.push(menuItem);		
+			menuItems.push(menuItem);
 			menuItem.observe('click',
 					ArmyforgeUI.wrapActivatableHandler(menuItem, ArmyforgeUI.swapUpgrade)
 						.bindAsEventListener(this, formation, x, upgradeType));
@@ -159,13 +175,13 @@ var ArmyforgeUI = {
 		var menuItems = [];
 		section.formations.each(function(f) {
 			var menuItem = ArmyforgeUI.createMenuItem(f.id, f.name, f.cost);
-			menuItems.push(menuItem);		
+			menuItems.push(menuItem);
 			 // should this be done after the table is inserted in the DOM?
-			menuItem.observe('click', 
+			menuItem.observe('click',
 					ArmyforgeUI.wrapActivatableHandler(menuItem, ArmyforgeUI.addFormation)
 						.bindAsEventListener(this, f));
 		});
-		var menu = ArmyforgeUI.createMenu(section.name,menuItems);
+		var menu = ArmyforgeUI.createMenu(section.name,menuItems,section.notes);
 
 		$('armyList').insert(menu);
 	},
@@ -189,7 +205,7 @@ var ArmyforgeUI = {
 		var msgDiv = $('menuItemMsg' + id);
 		msgDiv.show();
 		msgDiv.update('['+msgs.join(', ')+']');
-		
+
 		var row = $('menuItem' + id);
 		row.removeClassName('interactive');
 		row.addClassName('inactive');
@@ -203,9 +219,11 @@ var ArmyforgeUI = {
 		// event listeners...
 		$('viewText').on('click', ArmyforgeUI.viewPlainText);
 		$('viewTable').on('click', ArmyforgeUI.viewTable);
+		$('statList').on('click', ArmyforgeUI.statList);
 		$('viewImport').on('click', ArmyforgeUI.viewLink);
 		$('orbatTitle').on('click', ArmyforgeUI.toggleNameEditor);
 		$('viewJSON').on('click', ArmyforgeUI.viewJSON);
+		$('viewPrint').on('click', ArmyforgeUI.viewPrint);
 
 		// parse url parameters...
 		ArmyforgeUI.urlData.baseURL = new String(window.location).split('?')[0];
@@ -213,8 +231,8 @@ var ArmyforgeUI = {
 		paramString.split('&').each(function(param) {
 			ArmyforgeUI.urlData[param.split('=')[0]] = param.split('=')[1];
 		});
-		var listFile = './lists/' + ArmyforgeUI.urlData.list + '.json';	
-	
+		var listFile = './lists/' + ArmyforgeUI.urlData.list + '.json';
+
 		// load the army list...
 		new Ajax.Request(listFile, {
 			method:'get',
@@ -222,14 +240,38 @@ var ArmyforgeUI = {
 				var list = JSON.parse( response.responseText );
 				ArmyList.init(list);
 				ArmyforgeUI.initUI();
+
+				if(list.includeFiles){
+					ArmyforgeUI.loadFile(list.includeFiles.primary, "primary");	//load primary into a common data reference library
+					list.includeFiles.allies.each(function(xx){
+						ArmyforgeUI.loadFile(xx, "allies");						//load allies into a common data reference library
+					});
+					list.includeFiles.common.each(function(xx){
+						ArmyforgeUI.loadFile(xx, "common");						//common (to all lists) into a common data reference library
+					});
+				} else {					// for older files without stat linkage
+					statList.hide();
+				}
 			},
-			onException: function(req, exc) {				
-				alert(exc.fileName +"...\n\n"+ exc.lineNumber +": "+ exc); // FF only
+			onException: function(req, exc) {
+				alert(exc.fileName +"...\n\n"+ exc.lineNumber +": "+ exc); // FireFox only
 			}
-		});	
+		});
+	},
+	loadFile(fileLocation, fileType){
+		new Ajax.Request(fileLocation, {
+			method:'get',
+			onSuccess: function(response) {
+				var content = JSON.parse( response.responseText );
+				ArmyList.addReferences(content, fileType);
+			},
+			onException: function(req, exc) {
+				alert(exc.fileName +"...\n\n"+ exc.lineNumber +": "+ exc); // Firefox only
+			}
+		});
 	},
 
-	initUI:function() {		
+	initUI:function() {
 
 		// render name and options
 		$('orbatListName').update( ArmyList.data.id + ' (' + ArmyList.data.version + ')' );
@@ -251,7 +293,7 @@ var ArmyforgeUI = {
 		// render notes
 		if (ArmyList.data.notes) {
 			var idx = 1;
-			ArmyList.data.notes.each(function(note) {			
+			ArmyList.data.notes.each(function(note) {
 				$('notes').insert(new Element('sup').update(idx++));
 				$('notes').insert(note);
 				$('notes').insert(new Element('br'));
@@ -259,8 +301,8 @@ var ArmyforgeUI = {
 		}
 
 		// show table
-		ArmyforgeUI.viewTable();		
-	},	
+		ArmyforgeUI.viewTable();
+	},
 
 	removeFormation:function(formation) {
             if (Force.canRemove(formation)) {
@@ -278,12 +320,12 @@ var ArmyforgeUI = {
 		if (formation.canRemove(upgradeType)) {
 			formation.upgrades.remove( upgradeType );
 			ArmyforgeUI.updateUpgrade(formation, upgradeType);
-			ArmyforgeUI.checkUpgradeMenuItems();		
+			ArmyforgeUI.checkUpgradeMenuItems();
 			ArmyforgeUI.checkWarnings();
 		}
 	},
 
-	renderForce:function() {		
+	renderForce:function() {
 		$('orbatName').update( Force.name );
 		Force.formations.each( ArmyforgeUI.renderFormation );
 		ArmyforgeUI.updatePoints();
@@ -310,11 +352,11 @@ var ArmyforgeUI = {
 		else {
 			$('formationDivider').insert({before:newRow});
 		}
-	
+
 		dropDown.hide();
 		newRow.observe('mouseover', function() { dropDown.show(); });
 		newRow.observe('mouseout', function() { dropDown.hide(); });
-		newRow.observe('click', ArmyforgeUI.removeFormation.bind(this, formation));		
+		newRow.observe('click', ArmyforgeUI.removeFormation.bind(this, formation));
 
 		formation.upgrades.uniq().each( function(x) {
 			ArmyforgeUI.renderUpgrade( formation,x );
@@ -329,7 +371,7 @@ var ArmyforgeUI = {
 		var newCell = new Element('td').update(upgradeType.name);
 		var clazz = 'upgrade_' + formation.id + ' interactive orbatUpgrade ' + (formation.type.mandatoryConstraint(upgradeType) ? ' mandatory':'');
 		var newRow = new Element('tr', {'id':'upgrade'+id, 'class':clazz}).update(
-						newCell 
+						newCell
 					 ).insert(
 						new Element('td', {'class':'points'}).update(' '));//upgradeType.pts));
 
@@ -352,10 +394,10 @@ var ArmyforgeUI = {
 		else {
 			ArmyforgeUI.formationRowFor(formation).insert({after:newRow});
 		}
-	
+
 
 		// delete event
-		newRow.observe('click', ArmyforgeUI.removeUpgrade.bind(this, upgradeType, formation));	
+		newRow.observe('click', ArmyforgeUI.removeUpgrade.bind(this, upgradeType, formation));
 		// dropdown
 		if (formation.type.replaceable(upgradeType)) {
 			var dropDown = ArmyforgeUI.createSwapPopup(formation, formation.type.optionsFor(upgradeType), upgradeType);
@@ -368,7 +410,7 @@ var ArmyforgeUI = {
 		// multiplier
 		var multiplier = new Element('span', {'id':'upgradeMultiplier' + id, 'class':'upgradeMultiplier'}).update(count + 'x&nbsp;');
 		newRow.down().insert(multiplier);
-		
+
 		if (count < 2) {
 			multiplier.hide();
 		}
@@ -383,7 +425,7 @@ var ArmyforgeUI = {
 		});
 	},
 
-	swapUpgrade:function(formation, upgradeType, upgradeType2) {	
+	swapUpgrade:function(formation, upgradeType, upgradeType2) {
 		ArmyforgeUI.addUpgrade(formation, upgradeType);
 		ArmyforgeUI.removeUpgrade(upgradeType2, formation);
 	},
@@ -408,7 +450,7 @@ var ArmyforgeUI = {
 			$('orbatName').update(Force.name);
 			$('orbatNameEditor').remove();
 			$('orbatName').show();
-		}	
+		}
 	},
 
 	updateFormationPoints:function(formation) {
@@ -433,7 +475,7 @@ var ArmyforgeUI = {
 		else if (upgradeRow && count == 1) {
 			multiplier.hide();
 		}
-		else if (upgradeRow && count > 1) {	
+		else if (upgradeRow && count > 1) {
 			multiplier.update( count + 'x&nbsp;');
 			multiplier.show();
 		}
@@ -453,9 +495,10 @@ var ArmyforgeUI = {
 		ArmyforgeUI.resetViews();
 		$('orbatDiv').show();
 		$('viewTable').addClassName('selected');
+		$('armyList').show();
 	},
 
-	viewLink:function() {		
+	viewLink:function() {
 		ArmyforgeUI.resetViews();
 		$('importDiv').show();
 		$('viewImport').addClassName('selected');
@@ -478,6 +521,40 @@ var ArmyforgeUI = {
 		$('plainTextDiv').show();
 		$('viewText').addClassName('selected');
 	},
+	statList:function() {
+		ArmyforgeUI.resetViews();
+		var output = Force.statText();
+		$('statListDiv').update( output );
+		$('statListDiv').show();
+		$('statList').addClassName('selected');
+		$('armyList').hide();
+	},
+	viewPrint:function(){
+		var elem = null;
+
+		if ($('plainTextDiv').visible()) {
+			elem = 'plainTextDiv';
+		} else if ($('statListDiv').visible()) {
+			elem = 'statListDiv';
+		}
+
+		if(elem){
+			var mywindow = window.open('', 'PRINT', 'height=10,width=10');
+			mywindow.document.write('<html><head><title>' + document.title  + '</title>');
+			mywindow.document.write('</head><body style="font-family:monospace;">');
+			mywindow.document.write('<h1>' + document.title  + '</h1>');
+			mywindow.document.write(document.getElementById(elem).innerHTML);
+			mywindow.document.write('</body></html>');
+			mywindow.document.close(); // necessary for IE >= 10
+			mywindow.focus(); // necessary for IE >= 10*/
+			mywindow.print();
+			mywindow.close();
+			return true;
+		}
+		else {
+			window.print();
+		}
+	},
 
 	wrapActivatableHandler:function(element, handler) {
 		return handler.wrap(function(proceed, event, arg1, arg2, arg3, arg4) {
@@ -491,4 +568,3 @@ var ArmyforgeUI = {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 document.on('dom:loaded', ArmyforgeUI.initPage );
-

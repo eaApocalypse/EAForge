@@ -81,10 +81,10 @@ tr.mandatory > td {
 	color:black;
 }
 .orbat tbody {
-	border-top:dotted 1px gray;			
+	border-top:dotted 1px gray;
 }
 .points {
-	padding-left:0;	
+	padding-left:0;
 	text-align:right;
 	vertical-align:top;
 }
@@ -138,7 +138,7 @@ div.dropDown .listDiv table td {
 
 /* ARMY LISTS */
 #armyList {
-	padding:0 1em 1em 1em;			
+	padding:0 1em 1em 1em;
 	position:fixed;
 	right:0;
 	top:0;
@@ -206,4 +206,45 @@ div.dropDown .listDiv table td {
 #importDiv textarea {
 	width:40em;
 	height:10em;
+}
+
+.divOuter{
+	width: 90%;
+}
+.divRowMain{
+}
+.divRowComposition{
+    font-style: italic;
+	margin-left: 10px;
+/*	background-color: #ffffdd;*/
+}
+.trStatHeader{
+	font-weight: bold;
+}
+.divStat{
+	display: inline-block;
+}
+.divStatList{
+	padding: 5px;
+}
+.td40{
+	min-width: 40px;
+}
+.td100{
+	min-width: 100px;
+}
+.td130{
+	min-width: 130px;
+}
+.td140{
+	min-width: 140px;
+}
+.td150{
+	min-width: 150px;
+}
+.td180{
+	min-width: 180px;
+}
+.tdFill{
+	width: 100%;
 }

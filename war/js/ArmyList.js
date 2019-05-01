@@ -95,7 +95,11 @@ var ArmyList = {
 				var defaults = [];
 				formation.mandatoryUpgradeConstraints.each( function(x) {
 					for (var i=0;i<x.min;i++){
-						defaults.push( x.from[0] );
+						var xx = x.from[0];
+						if(x.composite){
+							xx.composite = x.composite;
+						}
+						defaults.push( xx );
 					}
 				});
 				return defaults;
@@ -114,6 +118,66 @@ var ArmyList = {
 			formation.cost = formation.pts + total;
 		});
 	},
+	addReferences:function(content, fileType){
+		if(!this.data.xref){
+			this.data.xref = [];
+		}
+		this.data.xref.push({"fileType":fileType, "content":content});
+	},
+	getStats:function(xref){
+		var xxxx = this.data.xref.findAll(function(xr) {
+			return xr.fileType == "primary" || xr.fileType == "allies";
+		});
+		var unit = null;
+		xxxx.each(function(fil) {
+			if( unit == null){
+				unit = fil.content[0].unit.find(function(uu) {
+					return uu.name.toLowerCase() == xref.toLowerCase();
+				});
+			}
+		});
+		return unit;
+	},
+	getSpecialRule:function(title){
+		var xxxx = this.data.xref.findAll(function(xr) {
+			return xr.fileType == "primary" || xr.fileType == "allies";
+		});
+		var specialRule = null;
+		xxxx.each(function(fil) {
+			if( specialRule == null){
+				specialRule = fil.content[0].specialRules.find(function(uu) {
+					return uu.title.toLowerCase() == title.toLowerCase();
+				});
+			}
+		});
+		return specialRule;
+	},
+	getWeapon:function(name){
+		var xxxx = this.data.xref.findAll(function(xr) {
+			return xr.fileType == "common";
+		});
+		var weapon = null;
+		xxxx.each(function(fil) {
+			if( weapon == null){
+				weapon = fil.content.weapons.find(function(uu) {
+					return uu.name.toLowerCase() == name.toLowerCase();
+				});
+			}
+		});
+		return weapon;
+	},
+	getArmyStats:function(){
+		var xxxx = this.data.xref.findAll(function(xr) {
+			return xr.fileType == "primary";
+		});
+		var primary = null;
+			xxxx.each(function(fil) {
+			if( primary == null){
+				primary = fil.content[0].armyStats;
+			}
+		});
+		return primary;
+	},
 	upgradeForId:function(id) {
 		return ArmyList.data.upgrades.find( function(x) { return x.id == id; });
 	},
@@ -131,13 +195,22 @@ var ArmyList = {
 		}
 		return '';
 	},
-        roundUp:function(pts,increment) {
-            var x = increment;
-            while(x < pts) {
-                x += increment;
-            }
-            return x;
-        },
+	violatedMandatory:function(constraint){
+		return 'mandatory upgrade not included in any formations: ' + constraint.name;
+	},
+	violatedMandatoryUpgrade:function(constraint, formation){
+		return 'mandatory upgrade not included in formation: ' + formation.type.name + ' -> ' + constraint.name;
+	},
+	violatedTransport:function(constraint,formationName){
+		return 'transport max exceeded: ' + formationName;
+	},
+    roundUp:function(pts,increment) {
+        var x = increment;
+        while(x < pts) {
+            x += increment;
+        }
+        return x;
+    },
 	violated:function(pts,formations,constraint) {
 		if (constraint.perPoints && constraint.max) {
                         var slots = ArmyList.roundUp(pts,constraint.perPoints) / constraint.perPoints;
@@ -171,9 +244,28 @@ var ArmyList = {
 		}
 		return '';
 	},
-	canAddUpgrade:function(upgrades,constraint) {
-		if (constraint.max <= upgrades.countAll(constraint.from)) {
-			return ArmyList.maxString( constraint );
+	canAddUpgrade:function(upgrades,constraint,upgradeType) {
+		if(constraint.exclusive){
+			if (constraint.max == upgrades.countExclusive(constraint.from, upgradeType)) {
+				return ArmyList.maxString( constraint );
+			}
+		}
+		if(constraint.weighted){
+			var addWeight = 0;
+			upgrades.each(function(u) {
+				if( u.addweight ){
+					addWeight += u.addweight;
+				}
+			});
+
+			if (constraint.max + addWeight + 1 <= upgrades.countWeighted(constraint.from, upgradeType.weight)) {
+				return ArmyList.maxStringPlus( constraint, true, constraint.max + addWeight );
+			}
+		}
+		if(!constraint.weighted && !constraint.exclusive){
+			if (constraint.max <= upgrades.countAll(constraint.from)) {
+				return ArmyList.maxString( constraint );
+			}
 		}
 		return '';
 	},
@@ -182,13 +274,13 @@ var ArmyList = {
 				+ (constraint.name ? ' ' + constraint.name : '')
 				+ (constraint.perArmy && !ignorePerArmy ? ' per Army' : '');
 	},
-        mandatoryFormations:function() {
-            var mandatoryFormations = [];
-            ArmyList.data.formationConstraints.each( function(constraint) {
-                for (var i=0; i<constraint.min && !constraint.perPoints; i++) {
-                    mandatoryFormations.push( constraint.from[0] );
-                }
-            });
-            return mandatoryFormations;
-        }
+    mandatoryFormations:function() {
+        var mandatoryFormations = [];
+        ArmyList.data.formationConstraints.each( function(constraint) {
+            for (var i=0; i<constraint.min && !constraint.perPoints; i++) {
+                mandatoryFormations.push( constraint.from[0] );
+            }
+        });
+        return mandatoryFormations;
+    }
 };
