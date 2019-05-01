@@ -269,6 +269,11 @@ var ArmyList = {
 		}
 		return '';
 	},
+	maxStringPlus:function(constraint, ignorePerArmy, useMax) {
+		return (constraint.exclusive ? 'exclusive' : ((constraint.weighted ? 'group max ' : 'max ') + (useMax ? useMax : constraint.max)) )
+			+ (constraint.name ? ' ' + constraint.name : '')
+			+ (constraint.perArmy && !ignorePerArmy ? ' per Army' : '');
+	},
 	maxString:function(constraint, ignorePerArmy) {
 		return 'max ' + constraint.max
 				+ (constraint.name ? ' ' + constraint.name : '')
