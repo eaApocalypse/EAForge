@@ -181,6 +181,12 @@ var ArmyList = {
 	upgradeForId:function(id) {
 		return ArmyList.data.upgrades.find( function(x) { return x.id == id; });
 	},
+	upgradeIsComposite:function(upgrade){
+		var shortList = ArmyList.data.upgradeConstraints.findAll( function(constraint) {
+			return constraint.from.indexOf(upgrade) != -1 && constraint.composite;
+		});
+		return shortList.length > 0;
+	},
 	formationForId:function(id) {
 		return ArmyList.allFormations.find( function(x){ return x.id == id; });
 	},

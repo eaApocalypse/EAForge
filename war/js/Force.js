@@ -186,7 +186,11 @@ var Force = {
 					else {
 						var count = parseInt(x.split('x')[1]);
 						for (var i=0;i<count;i++) {
-							currentFormation.upgrades.push( ArmyList.upgradeForId(id) );
+							var addUpgrade = ArmyList.upgradeForId(id)
+							if( ArmyList.upgradeIsComposite(addUpgrade) ){
+								addUpgrade.composite = true;
+							}
+							currentFormation.upgrades.push( addUpgrade );
 						}
 					}
 				}
@@ -354,7 +358,11 @@ var Force = {
 				txt += '<td>';
 				for(var i = 0; i < wArray.length; i++){
 					if( wArray[i].modes[0].firepower ){
-						txt += wArray[i].modes[0].firepower + '</br>';
+						if(wArray[i].modes[0].range) {
+							txt += wArray[i].modes[0].firepower + '</br>';
+						} else {
+							txt += '(' + wArray[i].modes[0].firepower + ')</br>';
+						}
 					} else {
 						txt += '-</br>';
 					}
