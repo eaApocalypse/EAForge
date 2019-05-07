@@ -68,7 +68,10 @@
 
 	],
 	"formationConstraints":[
-		{"max":1,"perArmy":true, "name":"Spacecraft", "from":[6704]},
+		{"max":1,"perArmy":true, "name":"Spacecraft", "from":[704]},
+
+		{"max":2, "name":"Support Formations",           "from":[601,601,603,604,605,606,607,608,609,610], "forEach":[500], "name2":"Vanguard Maniple"},
+
 		{"maxPercent":34, "name":"Aircraft, Navy & Knights", "from":[700,701,702,703,704]}
 	],
 	"upgradeConstraints":[
