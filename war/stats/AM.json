@@ -1,6 +1,10 @@
 [
   {
     "name": "Adeptus Mechanicus Forces",
+    "armyStats": {
+        "strategy": "Adeptus Astartes armies have a Strategy Rating of 3",
+        "initiative": "All formations have an Initiative Rating of 2+"
+    },
     "specialRules": [
         {
           "title": "Automaton",
