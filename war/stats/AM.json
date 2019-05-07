@@ -1,0 +1,448 @@
+[
+  {
+    "name": "Adeptus Mechanicus Forces",
+    "specialRules": [
+        {
+          "title": "Automaton",
+          "description": [
+            "Unless they are part of a formation that includes other units that do not have this rule the formation can only take Hold, Engage, Marshall, Sustained Fire and Overwatch actions.",
+            "A formation does not receive a Blast Marker when a unit with Automaton is destroyed, this includes the extra Blast Marker from the first casualty of a crossfire and for units destroyed for being out of formation after a move. Automaton units hit by a weapon with Disrupt do take a Blast Marker however.",
+            "If a hit is inflicted on an Automaton unit because it is in a broken formation which is receiving a Blast Marker then it may attempt to save normally.",
+            "Automaton units killed in an assault count for the purposes of working out its result."
+          ]
+      },
+      {
+            "title": "God Machine Killer (GMK)",
+            "description": [
+              "Has TK(D6) instead of TK(D3) against WE with the God Machine special rule."
+        ]
+      },
+      {
+        "title": "Void Shields",
+        "description": [
+          "Imperial Titans are protected by void shield generators. The number of void shields each Titan has is noted on the Titan’s datasheet.",
+          "Each void shield will automatically stop one point of damage and then go down. Do not make armour saves for damage stopped by void shields, nor allocate Blast Markers. Once all of the shields have been knocked down, the Titan may be damaged normally and you may make saving throws against any hits that are scored. Hits from close combat ignore void shields but units using their firefight values must first knock down any shields before they can damage the Titan.",
+          "Void shields that have been knocked down can be repaired. Each Titan can repair one downed void shield in the end phase of each turn. In addition, if a Titan regroups it can use the dice roll to either repair the void shield or remove Blast Markers (e.g., if you rolled a 2 you could repair 2 shields, remove 2 Blast Markers or repair 1 shield and remove 1 Blast Marker)."
+        ]
+      },
+      {
+        "title": "God Machine",
+        "description": [
+          "All friendly/allied units with a line of fire to a unit that has the 'God Machine' special rule recieve a blast marker if the unit with 'God Machine' is destroyed.",
+          "Additionally when a Unit with the 'God Machine' Special rule is hit but a Pin Point attack from a space craft, the unit sufferes a TK(D6) instead of the usualy TK(D3) from each Pin Point."
+        ]
+      },
+      {
+        "title": "Ignore Shields",
+        "description": [
+          "Ignores Powerfields, Shadowfields, Ion Shields & Void Shields (Shadowfields still provide cover from shooting)."
+        ]
+      }
+    ],
+    "unit": [
+      {
+          "name": "Archmagos",
+          "type": "INF",
+          "speed": 15,
+          "armour": 3,
+          "cc": 3,
+          "ff": 4,
+          "weapons": [
+            "Solar Atomiser",
+            "Omnissian Axe"
+          ],
+          "specialRules": [
+            "Supreme Commander",
+            "Inspiring",
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Magos",
+          "type": "INF",
+          "speed": 15,
+          "armour": 4,
+          "cc": 4,
+          "ff": 4,
+          "weapons": [
+            "Eradication Ray",
+            "Omnissian Axe"
+          ],
+          "specialRules": [
+            "Commander",
+            "Inspiring",
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Tech Priest",
+          "type": "INF",
+          "speed": 15,
+          "armour": 4,
+          "cc": 4,
+          "ff": 4,
+          "weapons": [
+            "Eradication Ray",
+            "Omnissian Axe"
+          ],
+          "specialRules": [
+            "Leader",
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Skitarii Vanguard",
+          "type": "INF",
+          "speed": 15,
+          "armour": 5,
+          "cc": 5,
+          "ff": 5,
+          "weapons": [
+            "Radium Carbine"
+          ],
+          "specialRules": [
+          ]
+      },
+
+      {
+          "name": "Kataphron Breacher",
+          "type": "INF",
+          "speed": 20,
+          "armour": 4,
+          "cc": 4,
+          "ff": 5,
+          "weapons": [
+            "Heavy Arc Rifle",
+            "Hydraulic Claw"
+          ],
+          "specialRules": [
+            "Notes: Automaton",
+            "Invulnerable Save",
+            "Count as 2 for the purpose of being transported"
+          ]
+      },
+      {
+          "name": "Kataphron Destroyer",
+          "type": "INF",
+          "speed": 20,
+          "armour": 4,
+          "cc": 4,
+          "ff": 5,
+          "weapons": [
+            "Plasma Culverin",
+            "Cognis Flamer"
+          ],
+          "specialRules": [
+            "Notes: Automaton",
+            "Invulnerable Save",
+            "Count as 2 for the purpose of being transported"
+          ]
+      },
+      {
+          "name": "Skitarii Rangers",
+          "type": "INF",
+          "speed": 15,
+          "armour": 6,
+          "cc": 6,
+          "ff": 5,
+          "weapons": [
+            "Transuranic Arquebus"
+          ],
+          "specialRules": [
+            "Scout"
+          ]
+      },
+      {
+          "name": "Secutarii",
+          "type": "INF",
+          "speed": 15,
+          "armour": 5,
+          "cc": 5,
+          "ff": 4,
+          "weapons": [
+            "Kinetic Hammershot"
+          ],
+          "specialRules": [
+          ]
+      },
+      {
+          "name": "Electro-Priests",
+          "type": "INF",
+          "speed": 15,
+          "armour": 4,
+          "cc": 4,
+          "ff": 4,
+          "weapons": [
+            "Electroleech Staff",
+            "Electro Charges"
+          ],
+          "specialRules": [
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Sicarian Infiltrators",
+          "type": "INF",
+          "speed": 20,
+          "armour": 4,
+          "cc": 5,
+          "ff": 4,
+          "weapons": [
+            "Stubcarbine",
+            "Taser Goad"
+          ],
+          "specialRules": [
+            "Teleport"
+          ]
+      },
+      {
+          "name": "Sicarian Ruststalkers",
+          "type": "INF",
+          "speed": 20,
+          "armour": 4,
+          "cc": 4,
+          "weapons": [
+            "Transonic Blades"
+          ],
+          "specialRules": [
+            "Infiltrator"
+          ]
+      },
+      {
+          "name": "Praetorians",
+          "type": "INF",
+          "speed": 15,
+          "armour": 3,
+          "cc": 4,
+          "ff": 5,
+          "weapons": [
+            "Assault Cannon",
+            "Power Weapon"
+          ],
+          "specialRules": [
+            "Automaton",
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Battle Servitors",
+          "type": "INF",
+          "speed": 15,
+          "cc": 5,
+          "ff": 5,
+          "weapons": [
+            "Body Weapons"
+          ],
+          "specialRules": [
+            "Automaton",
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Kastelan Robot",
+          "type": "LV",
+          "speed": 15,
+          "armour": 4,
+          "cc": 5,
+          "ff": 5,
+          "weapons": [
+            "Phosphor Blaster",
+            "Power Fist"
+          ],
+          "specialRules": [
+            "Automaton",
+            "Walker",
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Conqueror Robot",
+          "type": "LV",
+          "speed": 10,
+          "armour": 3,
+          "cc": 5,
+          "ff": 5,
+          "weapons": [
+            "Autocannon",
+            "Heavy Bolter",
+            "Power Fist"
+          ],
+          "specialRules": [
+            "Automaton",
+            "Walker",
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Rapier",
+          "type": "Inf",
+          "speed": 10,
+          "cc": 6,
+          "ff": 5,
+          "weapons": [
+            "Rapier Laser Destroyer"
+          ],
+          "specialRules": [
+          ]
+      },
+      {
+          "name": "Ironstrider Ballistarius",
+          "type": "LV",
+          "speed": 25,
+          "armour": 5,
+          "cc": 6,
+          "ff": 5,
+          "weapons": [
+            "Twin Autocannon|0-1|",
+            "Twin Lascannon|0-1|"
+          ],
+          "specialRules": [
+            "Walker",
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Sydonian Dragoon",
+          "type": "LV",
+          "speed": 25,
+          "armour": 5,
+          "cc": 5,
+          "ff": 5,
+          "weapons": [
+            "Radium Jezzail",
+            "Taser Lance"
+          ],
+          "specialRules": [
+            "Walker",
+            "Invulnerable Save"
+          ]
+      },
+      {
+          "name": "Onager Dunecrawler",
+          "type": "AV",
+          "speed": 20,
+          "armour": 5,
+          "cc": 6,
+          "ff": 5,
+          "weapons": [
+            "Eradication Beamer|0-1|",
+            "Neutron Laser|0-1|",
+            "Twin Heavy Phosphor Blaster|0-1|",
+            "Icarus Array|0-1|"
+          ],
+          "specialRules": [
+            "Walker",
+            "Invulnerable Save"
+        ],
+        "notes": "Must choose either an Eradication Beamer, Icarus Array, Neutron Laser or Twin Heavy Phosphor Blaster."
+      },
+      {
+          "name": "Chimeradon",
+          "type": "AV",
+          "speed": 30,
+          "armour": 5,
+          "cc": 6,
+          "ff": 5,
+          "weapons": [
+            "Conqueror Cannon",
+            "Heavy Bolter"
+          ],
+          "specialRules": [
+            "Transport: May transport two infantry units without Jump Packs or Mounted."
+          ]
+      },
+      {
+          "name": "Termite Assault Drill",
+          "type": "AV",
+          "speed": 20,
+          "armour": 5,
+          "cc": 5,
+          "ff": 5,
+          "weapons": [
+            "Volkite Charges"
+          ],
+          "specialRules": [
+            "Tunneler",
+            "Transport: May transport two infantry units without Jump Packs or Mounted"
+          ]
+      },
+      {
+          "name": "Ordinati Minoris",
+          "type": "WE",
+          "speed": 15,
+          "armour": 5,
+          "cc": 6,
+          "ff": 5,
+          "weapons": [
+            "Volkite Charges|2",
+            "Minoris Battle Titan Weapon"
+          ],
+          "specialRules": [
+            "Damage Capacity 2",
+            "Void Shields 2",
+            "Reinforced Armour",
+            "Fearless"
+        ],
+          "notes": "Armed with a single Battle Titan Weapon.. ¤Critical Hit Effect¤: The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
+      },
+      {
+          "name": "Ordinati Majoris",
+          "type": "WE",
+          "speed": 10,
+          "armour": 5,
+          "cc": 6,
+          "ff": 5,
+          "weapons": [
+              "Volkite Charges|4",
+              ">Ordinatus Armageddon<",
+              "Nova Cannon||FxF",
+              ">Ordinatus Mars<",
+              "Sonic Disruptor||FxF",
+              ">Ordinatus Golgotha<",
+              "Hellfire Missile|6|FxF"
+          ],
+          "specialRules": [
+            "Damage Capacity 4",
+            "Void Shields 4",
+            "Reinforced Armour",
+            "Fearless"
+        ],
+        "notes": "¤Critical Hit Effect¤: The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
+      },
+    {
+      "name": "Avenger Strike Fighters",
+      "type": "AC",
+      "speed": "Fighter-Bomber",
+      "armour": 5,
+      "weapons": [
+        "AC Avenger Bolt Cannon",
+        "AC Twin Lascannon",
+        "AC Heavy Stubber"
+      ],
+      "specialRules": [
+
+      ]
+    },
+    {
+      "name": "Ark Mechanicus Battleship",
+      "type": "SC",
+      "weapons": [
+          {
+            "name": "0-1x Orbital Bombardment",
+            "modes": [
+              {
+                "firepower": "6BP, MW"
+              }
+            ]
+        },
+        "Pin Point|0-2|"
+    ],
+    "specialRules": [
+      "Is equipped with either Orbital Bombardment or two Pin Point attacks.",
+      "Slow to Arrive (may only arrive on the battlefield from turn 2 onwards)"
+    ]
+    }
+
+    ]
+  }
+]
