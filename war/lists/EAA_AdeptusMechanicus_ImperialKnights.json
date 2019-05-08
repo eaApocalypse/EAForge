@@ -42,8 +42,8 @@
 			{"id":560, "name":"Knight Castellan",           "pts":200, "units":"1 Knight Castellan",              "upgrades":[], "xref":["Knight Castellan"]},
 			{"id":570, "name":"Knight Valiant",             "pts":200, "units":"1 Knight Valiant",                "upgrades":[], "xref":["Knight Valiant"]}
 		]},
-		{"name":"Support Formations",
- 		 "notes":"(One Support Formation may be taken for each Core Banner)",
+		{"name":"Retainer Formations",
+ 		 "notes":"(One Retainer Formation may be taken for each Core Banner)",
 		 "formations":[
 			{"id":580, "name":"AA Platoon",                 "pts":125, "units":"3 Heavy AA, 3 Gun Emplacements",  "upgrades":[], "xref":["Heavy AA Gun"]},
 			{"id":590, "name":"Howitzer Platoon",           "pts":150, "units":"3 Howitzers, 3 Gun Emplacements", "upgrades":[], "xref":["Howitzer"]},
