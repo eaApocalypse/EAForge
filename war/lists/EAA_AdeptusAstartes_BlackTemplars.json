@@ -33,7 +33,7 @@
 			{"id":530, "name":"Land Raiders",           "pts":250, "units":"3 Land Raiders",         "upgrades":[10,11,13, 31,32],                               "xref":["Land Raider"]},
 			{"id":540, "name":"Land Speeders",          "pts":200,                                   "upgrades":[10,11,13]},
 			{"id":550, "name":"Predators",              "pts":250,                                   "upgrades":[10,11,13, 31,32, 37,38]},
-			{"id":560, "name":"Stormraven Gunships",    "pts":220, "units":"4 Stormraven Gunships",  "upgrades":[],                                              "xref":["Storm Raven Gunship"]},
+			{"id":560, "name":"Stormraven Gunships",    "pts":220, "units":"4 Stormraven Gunships",  "upgrades":[],                                              "xref":["Black Templars Storm Raven Gunship"]},
 			{"id":570, "name":"Sword Brethren",         "pts":200, "units":"6 Sword Brethren",       "upgrades":[10,11,12,13, 31,32, 37,38, 33,34,35,36,60,61],  "xref":["Sword Brethren"]},
 			{"id":580, "name":"Terminators",            "pts":350, "units":"4 Terminators",          "upgrades":[10,11,13, 33],                                  "xref":["Terminators"]},
 			{"id":590, "name":"Vindicators",            "pts":225, "units":"4 Vindicators",          "upgrades":[10,11,13, 31,32, 37,38],                        "xref":["Vindicator"]},
@@ -77,11 +77,11 @@
 		{"id":31, "name":"Hunter",                      "pts":75,  "xref":["Hunter"]},
 		{"id":32, "name":"Stalker",                     "pts":75,  "xref":["Stalker"]},
 
-		{"id":33, "name":"Land Raider",                 "pts":50,  "xref":["Land Raider"],                   "weight":2},
-		{"id":34, "name":"Razorback (THB)",             "pts":25,  "xref":["Razorback, Twin Heavy Bolter"],  "weight":1},
-		{"id":35, "name":"Razorback (TL)",              "pts":25,  "xref":["Razorback, Twin Lascannon"],     "weight":1},
-		{"id":36, "name":"Rhino",                       "pts":0,   "xref":["Rhino"],                         "weight":2},
-		{"id":61, "name":"Stormraven Transport",        "pts":35,  "xref":["Storm Raven Transport"],         "weight":2},
+		{"id":33, "name":"Land Raider",                 "pts":50,  "xref":["Land Raider"],                           "weight":2},
+		{"id":34, "name":"Razorback (THB)",             "pts":25,  "xref":["Razorback, Twin Heavy Bolter"],          "weight":1},
+		{"id":35, "name":"Razorback (TL)",              "pts":25,  "xref":["Razorback, Twin Lascannon"],             "weight":1},
+		{"id":36, "name":"Rhino",                       "pts":0,   "xref":["Rhino"],                                 "weight":2},
+		{"id":61, "name":"Stormraven Transport",        "pts":35,  "xref":["Black Templars Storm Raven Transport"],  "weight":2},
 		{"id":60, "name":"6 Drop pods",                 "pts":0,   "xref":["Drop Pod"]},
 
 		{"id":70, "name":"4 Deathstorm Whirlwind",      "pts":0,   "xref":["Deathstorm, Whirlwind Launcher"]},
@@ -100,7 +100,7 @@
 		{"min":1, "max":1,"perArmy":true, "name":"Spacecraft",          "from":[630]},
 		{"min":0, "max":1,"perArmy":true, "name":"Assault Terminators", "from":[510]},
 		{"min":0, "max":1,"perArmy":true, "name":"Deathstorm",          "from":[610]},
-		{"maxPercent":34, "name":"Crusade Fleet Support",               "from":[610,620,640,650]},
+		{"maxPercent":33, "name":"Crusade Fleet Support",               "from":[610,620,640,650]},
 
 		{"max": 2, "name": "Support Detachments", "from": [510,520,530,540,550,560,570,580,590,600],  "forEach": [500], "name2": "Crusaders" },
 
