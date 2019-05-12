@@ -27,7 +27,7 @@
 	"sections":[
 		{"name":"Questoris Banner",
 		 "formations":[
-			{"id":500, "name":"Questoris Banner",	          "pts":300,               "upgrades":[21,22,23,24,25,26,27,41,42]}
+			{"id":500, "name":"Questoris Banner",	          "pts":5,               "upgrades":[21,22,23,24,25,26,27,41,42]}
 		]},
 		{"name":"Armiger Banner",
 	   "notes":"(Up to one Armiger Banner for each Questoris Banner. )",
@@ -38,12 +38,12 @@
 		{"name":"Cerastus Banner",
  		 "notes":"(Up to one Cerasus Banner for each Questoris Banner.)",
 		 "formations":[
-			{"id":700, "name":"Cerasus Banner",	            "pts":200,               "upgrades":[31,32,33,34,41,42]}
+			{"id":700, "name":"Cerasus Banner",	            "pts":25,               "upgrades":[31,32,33,34,41,42]}
 		]},
 		{"name":"Relic Banner",
  		 "notes":"(Up to one Relic Banner for each Questoris Banner.)",
 		 "formations":[
-			{"id":800, "name":"Acastus Reliquae",           "pts":200,               "upgrades":[]}
+			{"id":800, "name":"Acastus Reliquae",           "pts":50,               "upgrades":[]}
 		]},
 		{"name":"Adeptus Mechanicus Navy Formations",
  		 "notes":"(Up to a third of the points available may be spent on Imperial Knight Support and Adeptus Mechanicus Navy Formations.)",
