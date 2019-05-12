@@ -8,6 +8,44 @@
             }
         ]
       },
+
+      {
+        "name": "2x Carapace Weapon Mount",
+          "modes": [
+            {
+              "firepower": "2x Carapace Weapon Mount, FxF"
+            }
+        ]
+      },
+      {
+        "name": "Carapace Weapon Mount",
+          "modes": [
+            {
+              "firepower": "Carapace Weapon Mount, FxF"
+            }
+        ]
+      },
+      {
+        "name": "2x Arm Weapon Mount",
+          "modes": [
+            {
+              "firepower": "2x Arm Weapon Mount, FwA"
+            }
+        ]
+      },
+      {
+        "name": "Arm Weapon Mount",
+          "modes": [
+            {
+              "firepower": "2x Arm Weapon Mount, FwA"
+            }
+        ]
+      },
+
+
+
+
+
       {
         "name": "4 Battle Titan Weapons",
           "modes": [
@@ -249,17 +287,6 @@
           }
         ]
       },
-      {
-        "name": "Orbital Bombardment 10BP",
-        "modes": [
-          {
-            "firepower": "10BP",
-            "specialRules": [
-              "MW"
-          ]
-          }
-        ]
-      },	  
       {
         "name": "Pin Point",
         "modes": [
@@ -670,10 +697,11 @@
       "name": "AC Stasis Bomb",
         "modes": [
           {
-            "firepower": "1BP",
+            "firepower": "2BP",
             "range": 15,
             "specialRules": [
-              "D"
+              "IC",
+              "SS"
           ]
         }
       ]
@@ -785,7 +813,7 @@
             "range": 15,
             "specialRules": [
               "TK(D2)",
-              "Shield Disruptor",
+              "Ignore Shields",
               "FxF"
               ]
           }
@@ -1020,7 +1048,7 @@
       "name": "AC Underwing Rockets",
       "modes": [
         {
-          "firepower": "AT4+ FxF",
+          "firepower": "AT4+",
           "range": 30
         }
       ]
@@ -1084,7 +1112,7 @@
           ]
                 },
     {
-      "name": "Acastus Conversion Beamer",
+      "name": "Acastus Twin Conversion Beamer",
         "modes": [
           {
             "firepower": "MW3+",
@@ -1217,6 +1245,18 @@
             "specialRules": [
               "EA(+1)",
               "MW"
+          ]
+        }
+      ]
+    },
+    {
+          "name": "Arc Lance",
+          "modes": [
+            {
+            "firepower": "AT4+",
+            "range": 30,
+            "specialRules": [
+
           ]
         }
       ]
@@ -1472,7 +1512,9 @@
       "modes": [
         {
           "firepower": "AP4+/AT4+",
-          "range": 75
+          "range": 75,
+          "specialRules": [
+        ]
         }
       ]
     },
@@ -2202,7 +2244,7 @@
           "specialRules": [
           "EA(+1)",
           "Lance",
-          "Lightning Charge"
+          "FS"
         ]
     },
         {
@@ -2210,8 +2252,8 @@
           "join": "and",
           "specialRules": [
             "EA(+1)",
-            "TK(1)",
-            "Lightning Charge"
+            "Lance",
+            "FS"
           ]
         }
       ]
@@ -2311,7 +2353,7 @@
       "name": "Conflagration Cannon",
         "modes": [
           {
-            "firepower": "3x AP3+",
+            "firepower": "5x AP3+",
             "range": 30,
             "specialRules": [
               "IC"
@@ -2534,7 +2576,7 @@
       "name": "Conqueror Cannon",
         "modes": [
           {
-            "firepower": "AT5+/AT5+",
+            "firepower": "AP5+/AT5+",
             "range": 45,
             "specialRules": [
           ]
@@ -2590,7 +2632,7 @@
             "range": 15,
             "specialRules": [
               "TK(1)",
-              "Shield Disruptor"
+              "Ignore Shields"
           ]
         }
       ]
@@ -2662,15 +2704,6 @@
           }
       ]
     },
-    {
-      "name": "Deathwind",
-        "modes": [
-          {
-            "firepower": "AP5+/AT5+",
-            "range": 15
-        }
-      ]
-    },	
     {
       "name": "Dakka Kannon",
         "modes": [
@@ -3595,7 +3628,7 @@
       "name": "Gatling Blaster",
         "modes": [
           {
-            "firepower": "4x AP4+/AT4+",
+            "firepower": "6x AP4+/AT4+",
             "range": 60,
             "specialRules": [
 
@@ -4587,10 +4620,13 @@
       "name": "Hydraulic Claw",
         "modes": [
           {
-            "firepower": "Assault Weapons"
+            "firepower": "Assault Weapons",
+            "specialRules": [
+              "MW"
+            ]
           }
-      ]
-    },
+        ]
+      },
     {
       "name": "Hyperios Launcher",
       "modes": [
@@ -4617,7 +4653,16 @@
       "name": "Icarus Array",
         "modes": [
           {
-            "firepower": "2x AP5+/AT6+/AA5+",
+            "firepower": "AP5+/AT6+/AA6+",
+            "range": 30
+          }
+      ]
+    },
+    {
+      "name": "Twin-Icarus Array",
+        "modes": [
+          {
+            "firepower": "AP4+/AT5+/AA5+",
             "range": 30
           }
       ]
@@ -4873,7 +4918,7 @@
             "specialRules": [
               "EA(+1)",
               "Lance",
-              "Lightning Charge"
+              "FS"
           ]
         }
       ]
@@ -4887,7 +4932,7 @@
             "specialRules": [
               "IC",
               "TK(1)",
-              "Shield Disruptor"
+              "Ignore Shields"
           ]
           },
           {
@@ -5043,8 +5088,8 @@
       "name": "Laser Blaster",
       "modes": [
         {
-          "firepower": "7x AP5+/AT3+",
-          "range": 45,
+          "firepower": "6x AP5+/AT3+",
+          "range": 60,
           "specialRules": [
           ]
         }
@@ -5065,10 +5110,17 @@
       "name": "Laser Burner",
       "modes": [
         {
-          "firepower": "Small Arms",
+          "firepower": "Assault Weapons",
           "specialRules": [
-              "EA(+3)",
-              "MW"
+            "EA(+4)"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "or",
+          "specialRules": [
+              "EA(+2)"
+
           ]
         }
       ]
@@ -5204,6 +5256,25 @@
             "firepower": "MW3+",
             "range": 45,
             "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lightning Claws",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)"
+          ]
+        },
+        {
+          "firepower": "Assault Weapons",
+          "join": "and",
+          "specialRules": [
+              "EA(+1)",
+              "MW"
           ]
         }
       ]
@@ -5384,6 +5455,18 @@
                 "MW"
           ]
         }
+      ]
+    },
+    {
+      "name": "Manipulators",
+        "modes": [
+          {
+            "firepower": "Assault Weapons",
+            "specialRules": [
+              "EA(+1)",
+              "MW"
+          ]
+          }
       ]
     },
     {
@@ -6080,6 +6163,7 @@
             "firepower": "3x MW2+",
             "range": 60,
             "specialRules": [
+              "Slw"
 
           ]
           }
@@ -6101,10 +6185,10 @@
       "name": "Plasma Decimator",
         "modes": [
           {
-            "firepower": "2x MW3+",
+            "firepower": "MW3+",
             "range": 30,
             "specialRules": [
-              "Slw"
+
           ]
           }
       ]
@@ -6136,8 +6220,8 @@
       "name": "Plasma Destructor",
         "modes": [
           {
-            "firepower": "4x MW3+",
-            "range": 90,
+            "firepower": "5x MW2+",
+            "range": 75,
             "specialRules": [
                 "Slw"
           ]
@@ -6369,7 +6453,7 @@
       "name": "Power Weapon",
       "modes": [
         {
-          "firepower": "(Assault Weapons)",
+          "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
             "MW"
@@ -6571,7 +6655,7 @@
             "specialRules": [
               "IC",
               "TK(D3)",
-              "Shield Disruptor"
+              "Ignore Shields"
           ]
           },
           {
@@ -6691,8 +6775,8 @@
             "firepower": "3BP",
             "range":90,
             "specialRules": [
-              "MW",
-              "IC"
+              "MW"
+
           ]
           }
       ]
@@ -6913,7 +6997,7 @@
       "name": "Reaper Missile Launchers",
       "modes": [
         {
-          "firepower": "2x AP5+",
+          "firepower": "AP4+/AT4+",
           "range": 45,
           "specialRules": [
           ]
@@ -7259,7 +7343,6 @@
             "firepower": "AT4+",
             "range": 75,
             "specialRules": [
-                "Ignore Shields",
               "SS"
           ]
           }
@@ -7351,7 +7434,7 @@
             "firepower": "Assault Weapons",
             "specialRules": [
                 "EA(+1)",
-                "TK(1)"
+                "TK(D3)"
           ]
         }
       ]
@@ -7491,18 +7574,6 @@
           }
       ]
     },
-    {
-      "name": "Smite",
-        "modes": [
-          {
-            "firepower": "(Small Arms)",
-            "specialRules": [
-				"EA(+1)", 
-				"MW"
-          ]
-        }
-      ]
-    },	
     {
       "name": "Snapper",
         "modes": [
@@ -8206,6 +8277,17 @@
       ]
     },
     {
+      "name": "Tertitary Arms",
+        "modes": [
+          {
+            "firepower": "Small Arms",
+            "specialRules": [
+              "EA(+2)"
+          ]
+          }
+      ]
+    },
+    {
       "name": "Tesla Cannon",
         "modes": [
           {
@@ -8279,7 +8361,7 @@
       "name": "Thermal Spear",
       "modes": [
         {
-          "firepower": "MW4+",
+          "firepower": "MW5+",
           "range": 15,
           "specialRules": [
           ]
@@ -8312,7 +8394,7 @@
             "firepower": "Small Arms",
             "specialRules": [
                 "EA(+1)",
-                "TK(1)",
+                "TK(D3)",
                 "Ignore Shields"
           ]
           }
@@ -8675,7 +8757,7 @@
       "name": "AC Twin Heavy Bolter",
       "modes": [
         {
-          "firepower": "AP5+/AA5+",
+          "firepower": "AP4+/AA5+",
           "range": 15
         }
       ]
@@ -9121,6 +9203,18 @@
       ]
     },
     {
+      "name": "Vengence Cannon",
+      "modes": [
+        {
+            "firepower": "MW2+",
+            "range": 90,
+            "specialRules": [
+                "TK(D6+1)"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Vengeance Launcher",
       "modes": [
         {
@@ -9265,11 +9359,11 @@
       "name": "Volkite Chierovile",
         "modes": [
           {
-            "firepower": "3x AP3+/AT4+",
+            "firepower": "4x AP3+/AT4+",
             "range": 45,
             "specialRules": [
-              "IC",
-              "D"
+              "IC"
+
           ]
           }
       ]
@@ -9538,7 +9632,7 @@
       "name": "Wraith Cannons",
         "modes": [
           {
-            "firepower": "MW5+",
+            "firepower": "2x MW5+",
             "range": 15
           },
           {
@@ -9655,6 +9749,10 @@
       "description": "Extra Attack +3"
     },
     {
+      "name": "EA(+4)",
+      "description": "Extra Attack +4"
+    },
+    {
       "name": "EA(+D3)",
       "description": "Extra Attack +D3"
     },
@@ -9715,7 +9813,7 @@
       "description": "Rear Arc"
     },
     {
-      "name": "Shield Disruptor",
+      "name": "Ignore Shields",
       "description": "A weapon with Shield Disruptor ignores Ion Shields. In addition, each hit with will knock down two Powerfields, Shadowfields or Void Shields. When only one field/shield remains, a Shield Disruptor hit will knock it down and must then be saved as a normal hit (it loses TK, MW or Lance)."
     },
     {
@@ -9773,6 +9871,10 @@
   {
     "name": "Spec",
     "description": "Special Rule"
+  },
+  {
+    "name": "WM",
+    "description": "Weapon Mount"
   }
 
   ]
