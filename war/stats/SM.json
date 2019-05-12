@@ -135,7 +135,7 @@
 					"Invulnerable Save",
 					"Leader"
 				],
-				"notes": "Tactical or Devastator units in the same formation as the Technmarine must exchange their Missile Launchers for Graviton Guns"
+				"notes": "Iron Hands Devastator units in the same formation as the Technmarine must exchange their Missile Launchers for Graviton Guns"
 			},
 			{
 				"name": "Librarian",
@@ -270,8 +270,7 @@
 				"cc": 4,
 				"ff": 4,
 				"weapons": [
-					"Missile Launcher|0-1",
-					"Graviton Gun|0-1"
+					"Graviton Gun"
 				]
 			},
 			{
