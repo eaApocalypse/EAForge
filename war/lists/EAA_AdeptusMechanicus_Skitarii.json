@@ -45,9 +45,7 @@
 		{"name":"SKITARII AIRCRAFT, NAVY AND ALLIES",
 		 "notes":"(Max 33%)",
 		 "formations":[
-			{"id":700, "name": "0-1 Knight Castellan",      "pts":200, "units":"1 Knight Castellan",          			    "upgrades":[],        "xref":["Knight Castellan"]},
-			{"id":701, "name": "0-1 Knight Valiant",	      "pts":200, "units":"1 Knight Valiant",             			    "upgrades":[],        "xref":["Knight Valiant"]},
-			{"id":702, "name": "0-1 Knight Paladins",       "pts":225, "units":"2 Knight Paladins",   		     			    "upgrades":[20,21,22],"xref":["Knight Paladin"]},
+			{"id":700, "name":"Questoris Banner",	          "pts":5,              																		  "upgrades":[21,22,23,24,25,26,27,41,42]},
 			{"id":703, "name": "Avenger Strike Fighters",   "pts":175, "units":"2 Avenger Strike Fighters", 					  "upgrades":[],        "xref":["Avenger Strike Fighters"]},
 			{"id":704, "name": "Mechanicus Battleship",     "pts":200, "units":"1 Ark Mechanicus Battleship ",  			  "upgrades":[],        "xref":["Ark Mechanicus Battleship"]}
 		]}
@@ -59,12 +57,19 @@
 
 		{"id":15, "name":"Skitarii Ranger",           "pts":0,   "xref":["Skitarii Ranger"]},
 
-		{"id":16, "name":"5 Chimeradons", 				  	"pts":125, "xref":["Chimeradon"]},
+		{"id":16, "name":"5 Duneriders", 				  	 	"pts":125, "xref":["Dunerider"]},
 		{"id":17, "name":"Termite Assault Drill",     "pts":50,  "xref":["Termite Assault Drill"]},
 
-		{"id":20, "name":"Ironstorm Missile Pod",     "pts":0,   "xref":["Ironstorm Missile Pod"]},
-		{"id":21, "name":"Stormspear Rocket Pod",     "pts":0,   "xref":["Stormspear Rocket Pod"]},
-		{"id":22, "name":"Twin Icarus Autocannon",     "pts":0,   "xref":["Twin Icarus Autocannon"]}
+		{"id":21, "name":"Knight Crusader",                 "pts":90,  "xref":["Knight Crusader"]},
+		{"id":22, "name":"Knight Errant",                   "pts":90,  "xref":["Knight Errant"]},
+		{"id":23, "name":"Knight Gallant",                  "pts":90,  "xref":["Knight Gallant"]},
+		{"id":24, "name":"Knight Magaera (R)",              "pts":90,  "xref":["Knight Magaera"]},
+		{"id":25, "name":"Knight Paladin",                  "pts":90,  "xref":["Knight Paladin"]},
+		{"id":26, "name":"Knight Styrix (R)",               "pts":90,  "xref":["Knight Styrix"]},
+		{"id":27, "name":"Knight Warden",                   "pts":90,  "xref":["Knight Warden"]},
+
+		{"id":41, "name":"Knight Castellan",                "pts":125, "xref":["Knight Castellan"]},
+		{"id":42, "name":"Knight Valiant",                  "pts":125, "xref":["Knight Valiant"]}
 
 	],
 	"formationConstraints":[
@@ -72,7 +77,7 @@
 
 		{"max":2, "name":"Support Formations",           "from":[601,601,603,604,605,606,607,608,609,610], "forEach":[500], "name2":"Vanguard Maniple"},
 
-		{"maxPercent":34, "name":"Aircraft, Navy & Knights", "from":[700,701,702,703,704]}
+		{"maxPercent":34, "name":"Aircraft, Navy & Knights", "from":[700,703,704]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "from":[10]},
@@ -89,7 +94,8 @@
 
 		{"min":0, "max":3, "from":[17], "appliesTo":[604,608,609]},
 
-		{"min":0, "max":2, "from":[20,21,22], "appliesTo":[702]}
+		{"min":3, "max":5, "from":[21,22,23,24,25,26,27],  "appliesTo":[700], "composite":true},
+		{"min":0, "max":1, "from":[41,42], "appliesTo":[700]}
 
 
 	]

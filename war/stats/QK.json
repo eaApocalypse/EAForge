@@ -124,7 +124,7 @@
         "speed": 25,
         "armour": 5,
         "cc": 5,
-        "ff": 5,
+        "ff": 4,
         "weapons": [
           "Avenger Gatling Cannon",
           "Rapid Fire Battle Cannon",
@@ -176,7 +176,7 @@
         "speed": 25,
         "armour": 5,
         "cc": 4,
-        "ff": 5,
+        "ff": 4,
         "weapons": [
           "Lightning Cannon",
           "Siege Claw"
@@ -211,7 +211,7 @@
         "speed": 25,
         "armour": 5,
         "cc": 4,
-        "ff": 5,
+        "ff": 4,
         "weapons": [
           "Volkite Chierovile",
           "Siege Claw"
@@ -229,7 +229,7 @@
         "speed": 25,
         "armour": 5,
         "cc": 4,
-        "ff": 5,
+        "ff": 4,
         "weapons": [
           "Avenger Gatling Cannon",
           "Thunderstrike Gauntlet",
@@ -252,8 +252,8 @@
         "type": "H-AV",
         "speed": 25,
         "armour": 5,
-        "cc": 3,
-        "ff": 4,
+        "cc": 4,
+        "ff": 5,
         "weapons": [
           "Flame Cannon",
           "Reaper Chainfist"
@@ -269,7 +269,7 @@
         "type": "H-AV",
         "speed": 25,
         "armour": 5,
-        "cc": 3,
+        "cc": 4,
         "ff": 4,
         "weapons": [
           "Graviton Singularity Cannon",
@@ -286,8 +286,8 @@
         "type": "H-AV",
         "speed": 25,
         "armour": 5,
-        "cc": 3,
-        "ff": 4,
+        "cc": 4,
+        "ff": 5,
         "weapons": [
           "Castigator Cannon",
           "Tempest Warblade"
@@ -305,8 +305,8 @@
         "type": "H-AV",
         "speed": 25,
         "armour": 5,
-        "cc": 3,
-        "ff": 4,
+        "cc": 4,
+        "ff": 5,
         "weapons": [
           "Cerastus Shock Lance"
         ],
@@ -334,8 +334,8 @@
         "type": "H-AV",
         "speed": 20,
         "armour": 4,
-        "cc": 3,
-        "ff": 3,
+        "cc": 4,
+        "ff": 4,
         "weapons": [
           "Volcano Lance",
           "Plasma Decimator",
@@ -354,8 +354,8 @@
         "type": "H-AV",
         "speed": 20,
         "armour": 4,
-        "cc": 3,
-        "ff": 3,
+        "cc": 4,
+        "ff": 4,
         "weapons": [
           "Conflagration Cannon",
           "Thundercoil Harpoon",
@@ -373,7 +373,7 @@
         "type": "WE",
         "speed": 20,
         "armour": 5,
-        "cc": 4,
+        "cc": 5,
         "ff": 4,
         "weapons": [
           "Acastus Twin Conversion Beamer|2"
@@ -391,7 +391,7 @@
         "type": "WE",
         "speed": 20,
         "armour": 5,
-        "cc": 4,
+        "cc": 5,
         "ff": 4,
         "weapons": [
           "Twin Magna Lascannon|2",
