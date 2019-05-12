@@ -90,7 +90,7 @@
 	],
 	"formationConstraints":[
 		{"max":1,"perArmy":true, "name":"Spacecraft", "from":[560]},
-		{"maxPercent":34, "name":"Aircraft, Navy & Titans", "from":[630,640,650,660,670,680]}
+		{"maxPercent":33, "name":"Aircraft, Navy & Titans", "from":[630,640,650,660,670,680]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "from":[13]},
