@@ -343,46 +343,52 @@ var Force = {
 
 				txt += '<td>';
 				for(var i = 0; i < wArray.length; i++){
-					if( wArray[i].modes[0].range ){
-						if(Number.isNaN(Number(wArray[i].modes[0].range))){
-							txt += wArray[i].modes[0].range + '</br>';
+					for(var ii = 0; ii < wArray[i].modes.length; ii++){
+						if( wArray[i].modes[ii].range ){
+							if(Number.isNaN(Number(wArray[i].modes[ii].range))){
+								txt += wArray[i].modes[ii].range + '</br>';
+							} else {
+								txt += wArray[i].modes[ii].range + 'cm</br>';
+							}
 						} else {
-							txt += wArray[i].modes[0].range + 'cm</br>';
+							txt += '-</br>';
 						}
-					} else {
-						txt += '-</br>';
 					}
 				}
 				txt += '</td>';
 
 				txt += '<td>';
 				for(var i = 0; i < wArray.length; i++){
-					if( wArray[i].modes[0].firepower ){
-						if(wArray[i].modes[0].range) {
-							txt += wArray[i].modes[0].firepower + '</br>';
+					for(var ii = 0; ii < wArray[i].modes.length; ii++){
+						if( wArray[i].modes[ii].firepower ){
+							if(wArray[i].modes[ii].range) {
+								txt += wArray[i].modes[ii].firepower + '</br>';
+							} else {
+								txt += '(' + wArray[i].modes[ii].firepower + ')</br>';
+							}
 						} else {
-							txt += '(' + wArray[i].modes[0].firepower + ')</br>';
+							txt += '-</br>';
 						}
-					} else {
-						txt += '-</br>';
 					}
 				}
 				txt += '</td>';
 
 				txt += '<td>';
 				for(var i = 0; i < wArray.length; i++){
-					if( wArray[i].modes[0].specialRules ){
-						if( wArray[i].modes[0].specialRules.length > 0 ){
-							wArray[i].modes[0].specialRules.each(function(sr){
-								txt += sr + ' ';
-							});
-							txt += '</br>';
+					for(var ii = 0; ii < wArray[i].modes.length; ii++){
+						if( wArray[i].modes[ii].specialRules ){
+							if( wArray[i].modes[ii].specialRules.length > 0 ){
+								wArray[i].modes[ii].specialRules.each(function(sr){
+									txt += sr + ' ';
+								});
+								txt += '</br>';
+							}
+							else {
+								txt += '-</br>';
+							}
+						} else {
+							txt += '-</br>';
 						}
-						else {
-						txt += '-</br>';
-						}
-					} else {
-						txt += '-</br>';
 					}
 				}
 				txt += '</td>';
