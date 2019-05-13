@@ -150,7 +150,7 @@
         "specialRules": [
           "Reinforced Armour",
           "Walker",
-          "Thunderstrike Gauntlet (4+)"
+          "Ion Shield (4+)"
         ]
     },
     {
@@ -162,12 +162,13 @@
         "ff": 5,
         "weapons": [
           "Reaper Chainsword",
-          "Thunderstrike Gauntlet"
+          "Thunderstrike Gauntlet",
+          "Stormspear Rocket Pod"
         ],
         "specialRules": [
           "Reinforced Armour",
           "Walker",
-          "Thunderstrike Gauntlet (4+)"
+          "Ion Shield (4+)"
         ]
     },
     {
@@ -313,7 +314,7 @@
         "specialRules": [
           "Reinforced Armour",
           "Walker",
-          "Ion Shield (3+)"
+          "Ion Gauntlet (4+)"
         ]
     },
 
