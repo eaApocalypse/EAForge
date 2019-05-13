@@ -27,14 +27,14 @@
 	"sections":[
 		{"name":"SKITARII CORE FORMATIONS",
 		 "formations":[
-			{"id":500, "name":"Vanguard Maniple", "pts":225, "units":"9 Skitarii Vanguard and 1 Tech Priest Dominus",    "upgrades":[10,11,16],        "xref":["Skitarii Vanguard","Tech Priest Dominus"]}
+			{"id":500, "name":"Vanguard Maniple", "pts":175, "units":"9 Skitarii Vanguard",    "upgrades":[16],        "xref":["Skitarii Vanguard"]}
 		]},
 		{"name":"SKITARII SUPPORT FORMATIONS",
 		 "formations":[
-			{"id":601, "name":"Ranger Centuria",  "pts":125, "units":"4 Skitarii Rangers",													     "upgrades":[15],      "xref":["Skitarii Rangers"]},
-			{"id":602, "name":"Sicarian Infiltrators", "pts":225, "units":"7 Sicarian Infiltrators",    							   "upgrades":[12,17],   "xref":["Sicarian Infiltrators"]},
-			{"id":603, "name":"Sicarian Rustalkers", "pts":225, "units":"7 Sicarian Rustalkers",    									   "upgrades":[12,17],   "xref":["Sicarian Ruststalkers"]},
-			{"id":604, "name":"Fulgurite Electro-Priests", "pts":225, "units":"6 Fulgurite Electro-Pries",   					   "upgrades":[17],      "xref":["Electro-Priests"]},
+			{"id":601, "name":"Ranger Centuria",  "pts":25,                                 												     "upgrades":[15],      "xref":["Skitarii Rangers"]},
+			{"id":602, "name":"Sicarian Infiltrators", "pts":225, "units":"7 Sicarian Infiltrators",    							   "upgrades":[12,17,18],   "xref":["Sicarian Infiltrators"]},
+			{"id":603, "name":"Sicarian Rustalkers", "pts":225, "units":"7 Sicarian Rustalkers",    									   "upgrades":[12,17,18],   "xref":["Sicarian Ruststalkers"]},
+			{"id":604, "name":"Fulgurite Electro-Priests", "pts":225, "units":"6 Fulgurite Electro-Pries",   					   "upgrades":[17,19],      "xref":["Electro-Priests"]},
 			{"id":605, "name":"Ironstrider Cavaliers", "pts":225, "units":"6 Ironstrider Ballistarius",     					   "upgrades":[],        "xref":["Ironstrider Ballistarius"]},
 			{"id":606, "name":"Sydonian Dragoons", "pts":225, "units":"6 Sydonian Dragoons",     												 "upgrades":[],        "xref":["Sydonian Dragoon"]},
 			{"id":607, "name":"Onager Cohort", "pts":225, "units":"5 Onager Dunecrawlers",    												   "upgrades":[],        "xref":["Onager Dunecrawler"]},
@@ -51,14 +51,16 @@
 		]}
 	],
 	"upgrades":[
-		{"id":10, "name":"Archmagos",                 "pts":75,  "xref":["Archmagos"]},
-		{"id":11, "name":"Magos",               		  "pts":50,  "xref":["Magos"]},
-		{"id":12, "name":"Tech Priest Dominus",       "pts":50,  "xref":["Tech Priest Dominus"]},
+		{"id":10, "name":"Archmagos",                 "pts":75,			   "xref":["Archmagos"]},
+		{"id":11, "name":"Magos",               		  "pts":50,		 	   "xref":["Magos"]},
+		{"id":12, "name":"Tech Priest Dominus",       "pts":50,  			 "xref":["Tech Priest Dominus"]},
 
-		{"id":15, "name":"Skitarii Ranger",           "pts":0,   "xref":["Skitarii Ranger"]},
+		{"id":15, "name":"Skitarii Ranger",           "pts":25,  			 "xref":["Skitarii Ranger"]},
 
-		{"id":16, "name":"5 Duneriders", 				  	 	"pts":125, "xref":["Dunerider"]},
-		{"id":17, "name":"Termite Assault Drill",     "pts":50,  "xref":["Termite Assault Drill"]},
+		{"id":16, "name":"5 Duneriders", 				  	  "pts":125,  		 "xref":["Dunerider"]},
+		{"id":18, "name":"4 Duneriders", 				  	  "pts":100,  		 "xref":["Dunerider"]},
+		{"id":19, "name":"3 Duneriders", 				  	  "pts":75,  		 	 "xref":["Dunerider"]},
+		{"id":17, "name":"Termite Assault Drill",     "pts":50,        "xref":["Termite Assault Drill"]},
 
 		{"id":21, "name":"Knight Crusader",                 "pts":90,  "xref":["Knight Crusader"]},
 		{"id":22, "name":"Knight Errant",                   "pts":90,  "xref":["Knight Errant"]},
@@ -82,17 +84,21 @@
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "from":[10]},
 
-		{"min":0, "max":1, "from":[10,11], "appliesTo":[500]},
+		{"min":1, "max":1, "from":[12,11,10], "appliesTo":[500]},
 
 		{"min":0, "max":1, "from":[16], "appliesTo":[500]},
 
-		{"min":0, "max":2, "from":[15], "appliesTo":[601]},
+  	{"min":4, "max":6, "from":[15], "appliesTo":[601]},
 
 		{"min":0, "max":1, "from":[12], "appliesTo":[602,603,608,609]},
 
 		{"min":0, "max":4, "from":[17], "appliesTo":[602,603]},
 
+		{"min":0, "max":1, "from":[18], "appliesTo":[602,603]},
+
 		{"min":0, "max":3, "from":[17], "appliesTo":[604,608,609]},
+
+		{"min":0, "max":1, "from":[19], "appliesTo":[604]},
 
 		{"min":3, "max":5, "from":[21,22,23,24,25,26,27],  "appliesTo":[700], "composite":true},
 		{"min":0, "max":1, "from":[41,42], "appliesTo":[700]}
