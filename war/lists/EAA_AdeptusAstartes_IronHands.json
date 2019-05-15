@@ -131,9 +131,9 @@
 		{"max":1, "from":[550]},
 		{"max":1, "from":[520]},
 
-		{"max":2, "name":"Support Detachments", "from":[520,530,540,550,560,570,580,590], "forEach":[500,510], "name2":"Core Detachments"},
+		{"max":2, "name":"Support Detachments", "from":[520,530,540,560,570,580,590], "forEach":[500,510], "name2":"Core Detachments"},
 
-		{"maxPercent":33, "name":"Aircraft and Imperial Allies", "from":[600,610,620,630]}
+		{"maxPercent":33, "name":"Aircraft and Imperial Allies", "from":[600,610,620,630,550]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "name":"Supreme Commander", "from":[4]},
