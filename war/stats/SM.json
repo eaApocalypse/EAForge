@@ -425,6 +425,7 @@
 				"speed": 15,
 				"armour": 4,
 				"cc": 2,
+				"ff": 6,
 				"weapons": [
 					"Thunder Hammers and Storm Shields"
 				],
@@ -599,7 +600,7 @@
 				"type": "INF",
 				"speed": 15,
 				"armour": 4,
-				"cc": 3,
+				"cc": 2,
 				"ff": 4,
 				"weapons": [
 					"Bolters",

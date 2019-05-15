@@ -33,8 +33,8 @@
 			{"id":530, "name":"Land Raiders",           "pts":250, "units":"3 Land Raiders",         "upgrades":[10,11,13, 31,32],                               "xref":["Land Raider"]},
 			{"id":540, "name":"Land Speeders",          "pts":200,                                   "upgrades":[10,11,13]},
 			{"id":550, "name":"Predators",              "pts":250,                                   "upgrades":[10,11,13, 31,32, 37,38]},
-			{"id":560, "name":"Stormraven Gunships",    "pts":220, "units":"4 Stormraven Gunships",  "upgrades":[],                                              "xref":["Black Templars Storm Raven Gunship"]},
-			{"id":570, "name":"Sword Brethren",         "pts":200, "units":"6 Sword Brethren",       "upgrades":[10,11,12,13, 31,32, 37,38, 33,34,35,36,60,61],  "xref":["Sword Brethren"]},
+			{"id":560, "name":"Stormraven Gunships",    "pts":300, "units":"4 Stormraven Gunships",  "upgrades":[],                                              "xref":["Black Templars Storm Raven Gunship"]},
+			{"id":570, "name":"Sword Brethren",         "pts":250, "units":"6 Sword Brethren",       "upgrades":[10,11,12,13, 31,32, 37,38, 33,34,35,36,60,61],  "xref":["Sword Brethren"]},
 			{"id":580, "name":"Terminators",            "pts":350, "units":"4 Terminators",          "upgrades":[10,11,13, 33],                                  "xref":["Terminators"]},
 			{"id":590, "name":"Vindicators",            "pts":225, "units":"4 Vindicators",          "upgrades":[10,11,13, 31,32, 37,38],                        "xref":["Vindicator"]},
 			{"id":600, "name":"Whirlwinds",   	        "pts":275, "units":"4 Whirlwinds",           "upgrades":[10,11,13, 31,32],                               "xref":["Whirlwind"]}
@@ -81,7 +81,7 @@
 		{"id":34, "name":"Razorback (THB)",             "pts":25,  "xref":["Razorback, Twin Heavy Bolter"],          "weight":1},
 		{"id":35, "name":"Razorback (TL)",              "pts":25,  "xref":["Razorback, Twin Lascannon"],             "weight":1},
 		{"id":36, "name":"Rhino",                       "pts":0,   "xref":["Rhino"],                                 "weight":2},
-		{"id":61, "name":"Stormraven Transport",        "pts":35,  "xref":["Black Templars Storm Raven Transport"],  "weight":2},
+		{"id":61, "name":"Stormraven Transport",        "pts":55,  "xref":["Black Templars Storm Raven Transport"],  "weight":2},
 		{"id":60, "name":"6 Drop pods",                 "pts":0,   "xref":["Drop Pod"]},
 
 		{"id":70, "name":"4 Deathstorm Whirlwind",      "pts":0,   "xref":["Deathstorm, Whirlwind Launcher"]},
