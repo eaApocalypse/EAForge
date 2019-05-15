@@ -31,7 +31,6 @@
 			{"id":520, "name":"Dreadnought Talon",       "pts":225,                                    "upgrades":[25,26,27,  140,143]},
 			{"id":530, "name":"Land Raiders",            "pts":250, "units":"3 Land Raiders",          "upgrades":[60,61, 40,41,  95,96],   "xref":["Land Raider"]},
 			{"id":540, "name":"Land Speeders",           "pts":200,                                    "upgrades":[]},
-			{"id":550, "name":"Orbital Support",         "pts":0,                                      "upgrades":[]},
 			{"id":560, "name":"Predator",                "pts":250,                                    "upgrades":[60,61,  93,94,95]},
 			{"id":570, "name":"Scouts",                  "pts":150,                                    "upgrades":[60,61, 35,36,  30,  151,152]},
 			{"id":580, "name":"Vindicators",             "pts":225, "units":"4 Vindicators",           "upgrades":[60,61,  95,96],          "xref":["Vindicator"]},
@@ -40,8 +39,9 @@
 		{"name":"IRON HANDS AIRCRAFT AND IMPERIAL ALLIES",
 		 "notes":"(Max 33%)",
 		 "formations":[
-			{"id":600, "name":"Storm Talon Squadron",    "pts":200, "units":"2 Storm Talons Gunships",	"upgrades":[],                      "xref":["Storm Talon Gunship"]},
 			{"id":610, "name":"Thunderhawk Transporter", "pts":200, "units":"Thunderhawk Transporter",  "upgrades":[120],                   "xref":["Thunderhawk Transporter"]},
+			{"id":600, "name":"Storm Talon Squadron",    "pts":200, "units":"2 Storm Talons Gunships",	"upgrades":[],                      "xref":["Storm Talon Gunship"]},
+			{"id":550, "name":"Orbital Support",         "pts":0,                                      "upgrades":[]},
 			{"id":620, "name":"Warhound Pack",           "pts":500, "upgrades":[]},
 			{"id":630, "name":"Reaver Titan",            "pts":600, "upgrades":[]}
 		]}
