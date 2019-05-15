@@ -42,11 +42,11 @@
 		{"name":"BLACK TEMPLARS CRUSADE FLEET SUPPORT",
 		 "notes":"(Max 33%)",
 		 "formations":[
-			{"id":610, "name":"Deathstorm Drop Pod",    "pts":200,                                     "upgrades":[73]},
+			{"id":650, "name":"Thunderhawk",	        "pts":200, "units":"Thunderhawk Gunship",      "upgrades":[],    "xref":["Thunderhawk"]},
 			{"id":620, "name":"Landing Craft",          "pts":350, "units":"1 Landing Craft",          "upgrades":[],    "xref":["Landing Craft"]},
-			{"id":630, "name":"Orbital Support",        "pts":0,                                       "upgrades":[]},
+			{"id":610, "name":"Deathstorm Drop Pod",    "pts":200,                                     "upgrades":[73]},
 			{"id":640, "name":"Storm Talon Squadron",   "pts":150, "units":"2 Storm Talon Gunships",   "upgrades":[],    "xref":["Storm Talon Gunship"]},
-			{"id":650, "name":"Thunderhawk",	        "pts":200, "units":"Thunderhawk Gunship",      "upgrades":[],    "xref":["Thunderhawk"]}
+			{"id":630, "name":"Orbital Support",        "pts":0,                                       "upgrades":[]}
 		]}
 	],
 	"upgrades":[
